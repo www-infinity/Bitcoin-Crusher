@@ -1,0 +1,64 @@
+name: Save Spin Record
+
+on:
+  workflow_dispatch:
+    inputs:
+      spin_data:
+        description: 'JSON spin data'
+        required: true
+        type: string
+      filename:
+        description: 'Target filename (e.g. spins/spin-2026-03-13T01-52-40.json)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate filename
+        env:
+          FILENAME: ${{ inputs.filename }}
+        run: |
+          if ! echo "$FILENAME" | grep -qE '^spins/spin-[0-9T-]+\.json$'; then
+            echo "❌ Invalid filename: $FILENAME"
+            exit 1
+          fi
+
+      - name: Write spin file and commit
+        env:
+          SPIN_DATA: ${{ inputs.spin_data }}
+          FILENAME: ${{ inputs.filename }}
+        run: |
+          mkdir -p spins
+          node -e "
+            const path = require('path');
+            const fs = require('fs');
+            const filename = process.env.FILENAME;
+            const resolved = path.resolve(filename);
+            const spinsDir = path.resolve('spins');
+            if (!resolved.startsWith(spinsDir + path.sep)) {
+              console.error('Path traversal detected: ' + filename);
+              process.exit(1);
+            }
+            fs.writeFileSync(resolved, process.env.SPIN_DATA + '\n');
+            // Extract commit message fields from spin data
+            try {
+              const d = JSON.parse(process.env.SPIN_DATA);
+              const msg = '🎰 Spin #' + d.spinNumber + ': ' + d.result + ' [' + (d.symbols || []).join(' ') + ']';
+              fs.writeFileSync('.git/COMMIT_MSG', msg);
+            } catch (e) {
+              fs.writeFileSync('.git/COMMIT_MSG', '🎰 Spin: ' + filename);
+            }
+          "
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add "$FILENAME"
+          git commit -F .git/COMMIT_MSG
+          git push
