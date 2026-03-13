@@ -330,6 +330,9 @@
     } else {
       historyEl.insertBefore(item, historyEl.firstChild);
     }
+
+    // Update AI signal analysis after every spin
+    runAiAnalysis();
   }
 
   /* ------------------------------------------------------------------
@@ -508,6 +511,192 @@
   }
 
   /* ------------------------------------------------------------------
+     DEVICE IDENTITY — 8-block emoji signal address
+     Derived from a persistent random seed stored in localStorage.
+     Format matches the Infinity signal scheme:
+       Block palette drawn from the Infinity signal set.
+  ------------------------------------------------------------------ */
+  const IDENTITY_KEY = "bitcoin_crusher_device_id_v1";
+
+  // Emoji palette for the 8-block identifier (Infinity signal set)
+  const ID_PALETTE = [
+    "😎","🟦","🟥","🟨","♣️","⬜","🟩","🛸",
+    "🌻","💃","🐴","🎷","🔵","🟠","🟤","🟣",
+    "⭐","💎","₿","🚀","🔥","🥇","🌕","🧱",
+  ];
+
+  /** Generate a random 8-element ID array from the palette */
+  function generateRawId() {
+    const result = [];
+    for (let i = 0; i < 8; i++) {
+      result.push(ID_PALETTE[Math.floor(Math.random() * ID_PALETTE.length)]);
+    }
+    return result;
+  }
+
+  /** Load persisted ID or create a new one */
+  function loadOrCreateDeviceId() {
+    const stored = localStorage.getItem(IDENTITY_KEY);
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        if (Array.isArray(parsed) && parsed.length === 8) return parsed;
+      } catch (_) { /* fall through */ }
+    }
+    const fresh = generateRawId();
+    localStorage.setItem(IDENTITY_KEY, JSON.stringify(fresh));
+    return fresh;
+  }
+
+  let deviceId = loadOrCreateDeviceId();
+
+  function renderDeviceId() {
+    $("identityBlocks").textContent = deviceId.join(" ");
+    const ts = localStorage.getItem(IDENTITY_KEY + "_ts") || new Date().toISOString();
+    $("identityMeta").textContent = `Signal address · registered ${new Date(ts).toLocaleString()}`;
+  }
+
+  function wireIdentity() {
+    $("btnCopyId").addEventListener("click", () => {
+      const text = deviceId.join(" ");
+      navigator.clipboard.writeText(text).then(() => {
+        log(`📋 Device ID copied: ${text}`, "ok");
+      }).catch(() => {
+        log(`📋 Device ID: ${text}`, "ok");
+      });
+    });
+
+    $("btnRegenId").addEventListener("click", () => {
+      deviceId = generateRawId();
+      localStorage.setItem(IDENTITY_KEY, JSON.stringify(deviceId));
+      localStorage.setItem(IDENTITY_KEY + "_ts", new Date().toISOString());
+      renderDeviceId();
+      log("🔄 Device identity regenerated.", "warn");
+      aiLog(`♻️  Device ID updated: ${deviceId.join(" ")}`);
+    });
+
+    $("identityDisplay").addEventListener("click", () => {
+      const text = deviceId.join(" ");
+      navigator.clipboard.writeText(text).catch(() => {});
+    });
+  }
+
+  /* ------------------------------------------------------------------
+     AI SIGNAL ANALYSIS — on-device pattern engine (no external deps)
+     Analyses spin history to detect streaks, hot/cold symbols, and
+     generate a next-spin signal recommendation.
+  ------------------------------------------------------------------ */
+
+  const aiLogEl = $("aiLog");
+  const aiDotEl = $("aiDot");
+  const aiStatusTextEl = $("aiStatusText");
+  const aiPredictionEl = $("aiPrediction");
+
+  function aiLog(msg) {
+    const ts = new Date().toLocaleTimeString();
+    aiLogEl.textContent += `[${ts}] ${msg}\n`;
+    aiLogEl.scrollTop = aiLogEl.scrollHeight;
+  }
+
+  function setAiStatus(state, text) {
+    aiDotEl.className = `ai-dot${state ? " " + state : ""}`;
+    aiStatusTextEl.textContent = text;
+  }
+
+  /** Compute symbol frequency map from history array */
+  function computeFrequency(spins) {
+    const freq = {};
+    for (const { spinData } of spins) {
+      for (const sym of spinData.symbolLabels) {
+        freq[sym] = (freq[sym] || 0) + 1;
+      }
+    }
+    return freq;
+  }
+
+  /** Return top-N entries from a frequency map */
+  function topN(freq, n) {
+    return Object.entries(freq)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, n)
+      .map(([label, count]) => {
+        const sym = SYMBOLS.find((s) => s.label === label);
+        return { label, emoji: sym ? sym.emoji : "?", count };
+      });
+  }
+
+  /** Detect current win streak or lose streak */
+  function detectStreak(spins) {
+    if (!spins.length) return { type: "none", length: 0 };
+    let current = spins[0].spinData.tier !== "lose" ? "win" : "lose";
+    let length = 0;
+    for (const { spinData } of spins) {
+      const isWin = spinData.tier !== "lose";
+      if ((isWin && current === "win") || (!isWin && current === "lose")) {
+        length++;
+      } else {
+        break;
+      }
+    }
+    return { type: current, length };
+  }
+
+  /** Recommend a "signal" based on patterns — no RNG manipulation, advisory only */
+  function buildSignalReport(spins) {
+    if (spins.length < 3) {
+      return "Collecting signal data… spin at least 3 times for analysis.";
+    }
+
+    const freq = computeFrequency(spins);
+    const hot = topN(freq, 3);
+    const streak = detectStreak(spins);
+    const recentTiers = spins.slice(0, 5).map((s) => s.spinData.tier);
+    const winRate = spins.filter((s) => s.spinData.tier !== "lose").length / spins.length;
+    const avgScore = spins.reduce((a, s) => a + s.spinData.score, 0) / spins.length;
+
+    const lines = [];
+    lines.push(`📊 SIGNAL REPORT — ${spins.length} spins analysed`);
+    lines.push(`Win rate: ${(winRate * 100).toFixed(1)}%  |  Avg score/spin: ${avgScore.toFixed(1)}`);
+    lines.push(`Hot symbols: ${hot.map((h) => `${h.emoji}${h.label}(×${h.count})`).join("  ")}`);
+
+    if (streak.length >= 2) {
+      if (streak.type === "win") {
+        lines.push(`🔥 Win streak: ${streak.length} in a row — signal is hot`);
+      } else {
+        lines.push(`❄️  Lose streak: ${streak.length} in a row — pattern shift expected`);
+      }
+    }
+
+    const lastTier = recentTiers[0];
+    if (lastTier === "jackpot") {
+      lines.push("🎰 JACKPOT detected in last spin — peak signal achieved");
+    } else if (lastTier === "win-big") {
+      lines.push("💎 Mega-win energy — signal momentum building");
+    } else if (winRate > 0.55) {
+      lines.push("📈 Signal above average — continue sequence");
+    } else if (winRate < 0.25 && spins.length >= 5) {
+      lines.push("📉 Low signal density — reels recalibrating");
+    }
+
+    lines.push(`\n🪪 Device: ${deviceId.join(" ")}`);
+    return lines.join("\n");
+  }
+
+  function runAiAnalysis() {
+    if (!history.length) return;
+    setAiStatus("thinking", "Analysing signal patterns…");
+
+    // Simulate brief processing delay for UX
+    setTimeout(() => {
+      const report = buildSignalReport(history);
+      aiPredictionEl.textContent = report;
+      aiPredictionEl.className = "ai-prediction visible";
+      setAiStatus("active", `Signal analysis complete · ${history.length} data point${history.length !== 1 ? "s" : ""}`);
+      aiLog(`🤖 Analysis updated after spin #${spinCount}.`);
+    }, 600);
+  }
+
+  /* ------------------------------------------------------------------
      WIRE EVENTS
   ------------------------------------------------------------------ */
   function wireEvents() {
@@ -529,6 +718,8 @@
         if (!isSpinning) spin();
       }
     });
+
+    wireIdentity();
   }
 
   /* ------------------------------------------------------------------
@@ -542,6 +733,15 @@
     initReels();
     animateTicker();
     wireEvents();
+
+    // Device identity
+    if (!localStorage.getItem(IDENTITY_KEY + "_ts")) {
+      localStorage.setItem(IDENTITY_KEY + "_ts", new Date().toISOString());
+    }
+    renderDeviceId();
+    aiLog(`🪪 Device ID: ${deviceId.join(" ")}`);
+    setAiStatus("", "Signal engine ready — awaiting spin data");
+
     log("🧱 Bitcoin Crusher — Infinity Slot Machine ready.");
     if (window.BITCOIN_CRUSHER_TOKEN && cfg.owner && cfg.repo) {
       log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — GHP secret active, every spin will be committed via Actions.`, "ok");
