@@ -33,7 +33,7 @@
   let totalScore = 0;
   let isSpinning = false;
   let history = [];
-  let cfg = { owner: "", repo: "", branch: "main", token: "" };
+  let cfg = { owner: "", repo: "", branch: "main" };
 
   /* ------------------------------------------------------------------
      DOM REFS
@@ -180,15 +180,10 @@
   }
 
   /* ------------------------------------------------------------------
-     AUTH TOKEN — precedence: sessionStorage → cfg.token → pre-built secret
+     AUTH TOKEN — from CI-injected GHP secret (window.BITCOIN_CRUSHER_TOKEN)
   ------------------------------------------------------------------ */
   function getAuthToken() {
-    return (
-      sessionStorage.getItem("gh_token_session") ||
-      cfg.token ||
-      window.BITCOIN_CRUSHER_TOKEN ||
-      ""
-    ).trim();
+    return (window.BITCOIN_CRUSHER_TOKEN || "").trim();
   }
 
   /* ------------------------------------------------------------------
@@ -199,7 +194,7 @@
     const { owner, repo, branch } = cfg;
 
     if (!token || !owner || !repo) {
-      log("ℹ️  No token/owner/repo set — skipping repo commit (local spin only).", "warn");
+      log("⚠️  GHP secret not available — skipping repo commit (local spin only).", "warn");
       return null;
     }
 
@@ -414,7 +409,6 @@
     cfg.owner = $("cfgOwner").value.trim() || cfg.owner;
     cfg.repo = $("cfgRepo").value.trim() || cfg.repo;
     cfg.branch = $("cfgBranch").value.trim() || "main";
-    cfg.token = $("cfgToken").value || cfg.token;
     updateRepoLink();
   }
 
@@ -422,7 +416,6 @@
     $("cfgOwner").value = cfg.owner;
     $("cfgRepo").value = cfg.repo;
     $("cfgBranch").value = cfg.branch;
-    $("cfgToken").value = cfg.token ? "••••••" : "";
     updateRepoLink();
   }
 
@@ -436,10 +429,9 @@
 
   function saveCfg() {
     readInputsToCfg();
-    sessionStorage.setItem("gh_token_session", cfg.token || "");
     const safe = { owner: cfg.owner, repo: cfg.repo, branch: cfg.branch };
     localStorage.setItem(CFG_KEY, JSON.stringify(safe));
-    log("✅ Config saved. Token kept in session storage only.", "ok");
+    log("✅ Config saved.", "ok");
   }
 
   function loadCfg() {
@@ -448,7 +440,6 @@
     try {
       const saved = JSON.parse(raw);
       Object.assign(cfg, saved);
-      cfg.token = sessionStorage.getItem("gh_token_session") || "";
       pushCfgToInputs();
       log(`✅ Config loaded: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch})`, "ok");
     } catch (e) {
@@ -458,8 +449,7 @@
 
   function clearCfg() {
     localStorage.removeItem(CFG_KEY);
-    sessionStorage.removeItem("gh_token_session");
-    cfg = { owner: "", repo: "", branch: "main", token: "" };
+    cfg = { owner: "", repo: "", branch: "main" };
     pushCfgToInputs();
     log("🧼 Config cleared.", "warn");
   }
@@ -537,23 +527,17 @@
     prefillFromRepoMeta();
     loadCfg();
 
-    // Auto-configure from the CI-injected GHP secret when no session token exists
-    if (!cfg.token && window.BITCOIN_CRUSHER_TOKEN) {
-      cfg.token = window.BITCOIN_CRUSHER_TOKEN;
-      sessionStorage.setItem("gh_token_session", cfg.token);
-      const safe = { owner: cfg.owner, repo: cfg.repo, branch: cfg.branch };
-      localStorage.setItem(CFG_KEY, JSON.stringify(safe));
-    }
-
     pushCfgToInputs();
     initReels();
     animateTicker();
     wireEvents();
     log("🧱 Bitcoin Crusher — Infinity Slot Machine ready.");
-    if (cfg.token) {
-      log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — token active.`, "ok");
+    if (window.BITCOIN_CRUSHER_TOKEN && cfg.owner && cfg.repo) {
+      log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — GHP secret active, every spin will commit.`, "ok");
+    } else if (window.BITCOIN_CRUSHER_TOKEN) {
+      log("✅ GHP secret active — set Owner/Repo above and save to enable auto-commit on each spin.", "ok");
     } else {
-      log("⚙️  Set your GitHub token in the config panel to commit spins to the repo.");
+      log("⚠️  GHP secret not found — spins are local only (no commit will be made).", "warn");
     }
     log("🎰  Hit SPIN & CRUSH (or press Space) to start!");
   }

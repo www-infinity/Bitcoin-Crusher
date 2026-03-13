@@ -55,22 +55,12 @@
           <label class="form-label">Branch</label>
           <input class="form-input" id="cfgBranch" placeholder="main" />
 
-          <label class="form-label">GitHub Token</label>
-          <input class="form-input" id="cfgToken" type="password" placeholder="Fine-grained PAT (Contents: read/write)" />
         </div>
         <div class="form-actions">
           <button class="btn" id="btnSaveCfg">Save Config</button>
           <button class="btn btn-ghost" id="btnLoadCfg">Load Saved</button>
           <button class="btn btn-ghost" id="btnClearCfg">Clear</button>
         </div>
-        <details class="security-note">
-          <summary>🔒 Security note</summary>
-          <ul>
-            <li>Your token is stored in <strong>session storage only</strong> — it clears when this tab closes.</li>
-            <li>Use a <strong>fine-grained PAT</strong> scoped to just this repo with <code>Contents: read/write</code>.</li>
-            <li>Without a token, spins are local only (no commit is made).</li>
-          </ul>
-        </details>
       </div>
     </section>
 
