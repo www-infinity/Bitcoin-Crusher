@@ -1,0 +1,31 @@
+{
+  "spinNumber": 20,
+  "timestamp": "2026-03-13T09:57:08.017Z",
+  "symbols": [
+    "🚀",
+    "💰",
+    "🧱",
+    "⭐",
+    "🍄"
+  ],
+  "symbolLabels": [
+    "PUMP",
+    "BAG",
+    "BLOCK",
+    "STAR",
+    "MARIO"
+  ],
+  "symbolValues": [
+    9,
+    4,
+    4,
+    2,
+    6
+  ],
+  "result": "🔄 No match. Spin again.",
+  "tier": "lose",
+  "score": 0,
+  "totalScore": 719,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨"
+}
