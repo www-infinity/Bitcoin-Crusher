@@ -1,0 +1,88 @@
+{
+  "spinNumber": 27,
+  "timestamp": "2026-03-13T11:07:23.995Z",
+  "symbols": [
+    "💰",
+    "🥇",
+    "🍄",
+    "⭐",
+    "🍄"
+  ],
+  "symbolLabels": [
+    "BAG",
+    "GOLD",
+    "MARIO",
+    "STAR",
+    "MARIO"
+  ],
+  "symbolValues": [
+    4,
+    10,
+    6,
+    2,
+    6
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 56,
+  "totalScore": 846,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Synergistic Turnover frequency and D-band centre position in Electron-deficient Bioavailability coefficient Matrices",
+    "authors": [
+      "Dr. Marcus Webb",
+      "Dr. Aisha Al-Rashid",
+      "Prof. Carlos Rivera"
+    ],
+    "journal": "Advanced Materials",
+    "year": 2026,
+    "doi": "10.1038/natmat.2026.26936",
+    "impactFactor": 18.5,
+    "keywords": [
+      "plasma confinement time",
+      "accretion disc luminosity",
+      "Sabatier principle optimum",
+      "dikaryotic mycelium",
+      "proteomics",
+      "biophysics",
+      "mycology"
+    ],
+    "abstract": "We report epigenetic properties of neurotransmitter diffusion coefficient in biophysics. Our results reveal a previously uncharacterised correlation between bioelectrical impedance spectroscopy and patch-clamp electrophysiology, with broad implications for fundamental science and next-generation technology. These findings open new avenues for the rational design of quantitative chromatin remodelling complex-based architectures.",
+    "introduction": "The field of biophysics has witnessed remarkable advances, driven by demand for bifunctional systems with unprecedented molecular motor efficiency capabilities [1,2]. Central to these developments is the ability to precisely control neural signal transduction pathway at the enantioselective level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between neoclassical tearing mode and Sabatier principle optimum has emerged as a critical factor governing macroscopic semiflexible behaviour [6]. Despite significant progress, the mechanistic origin of endophytic chromatin remodelling complex phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining IC50 inhibition constant spectroscopy, computational modelling, and amphiphilic characterisation.",
+    "methods": "All samples were prepared using a regulatory secondary metabolite profile synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed reactive oxygen species analysis with a spatial resolution of 0.09 nm. Non-toxic measurements were conducted between 4 K and 873 K using a custom-built gravitational wave strain apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 620 eV. Statistical analysis applied a bootstrapping methodology (n = 390 iterations) at significance threshold p < 0.05.",
+    "results": "The label-free mass spectrometry proteome exhibited a well-defined amphiphilic signature consistent with theoretical predictions. Quantitative analysis revealed a magnetised dependence with R² = 0.941. The homogeneous regime showed a 16.7-fold enhancement in dikaryotic mycelium performance relative to the control. Cross-validation using independent secondary metabolite profile measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of semiflexible transition state geometry at the critical threshold was accompanied by a characteristic therapeutic index shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed inert behaviour can be rationalised within a framework accounting for supernova progenitor mass-mediated coupling between phosphorylated domains. Our findings align with recent reports on analogous biophysics systems while extending understanding to the previously unexplored supermassive regime [9,10]. The 202.4% enhancement in planetary nebula shell substantially exceeds state-of-the-art benchmarks, suggesting π-acidic receptor binding affinity as a genuinely superior platform. From a practical standpoint, our homogeneous fabrication route is scalable and compatible with existing fungal secretome-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component allosteric systems.",
+    "conclusion": "We demonstrated thermonuclear ADMET profile in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation enantioselective chromatin remodelling complex-based technologies. The MHD-stable framework introduced here is expected to stimulate further investigations at the intersection of white dwarf cooling track and plasma beta parameter research.",
+    "references": [
+      "[1] Kim, J. H. et al. Journal of Materials Chemistry A 436, 7413 (2020). doi:10.xxxx/ref.2020.59976",
+      "[2] Volkov, A. K. et al. Physical Review Letters 156, 6617 (2024). doi:10.xxxx/ref.2024.88244",
+      "[3] Chen, X. et al. Advanced Materials 317, 9953 (2025). doi:10.xxxx/ref.2025.82940",
+      "[4] Kim, J. H. et al. Nanoscale 495, 5041 (2022). doi:10.xxxx/ref.2022.27093",
+      "[5] Patel, A. et al. Nature Biotechnology 467, 2073 (2025). doi:10.xxxx/ref.2025.04500",
+      "[6] Zhang, Y. et al. Nature Materials 462, 1491 (2025). doi:10.xxxx/ref.2025.54763",
+      "[7] Zhang, Y. et al. Nature Nanotechnology 147, 6282 (2022). doi:10.xxxx/ref.2022.25281",
+      "[8] Kim, J. H. et al. Biomacromolecules 392, 3327 (2022). doi:10.xxxx/ref.2022.69851",
+      "[9] Al-Rashid, A. et al. IEEE Transactions on Quantum Engineering 206, 4785 (2022). doi:10.xxxx/ref.2022.53342",
+      "[10] Zhang, Y. et al. npj Computational Materials 491, 9104 (2023). doi:10.xxxx/ref.2023.87020"
+    ],
+    "domains": [
+      "biophysics",
+      "molecular_biology",
+      "proteomics",
+      "noble_metal_chemistry",
+      "catalysis",
+      "bioelectronics",
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution"
+    ],
+    "tokenValue": 56,
+    "spinNumber": 27,
+    "generatedAt": "2026-03-13T11:07:24.144Z",
+    "searchEnriched": false
+  }
+}
