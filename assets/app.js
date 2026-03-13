@@ -476,8 +476,13 @@
   }
 
   function updateRepoLink() {
-    if (cfg.owner && cfg.repo) {
-      $("repoLink").href = `https://github.com/${cfg.owner}/${cfg.repo}`;
+    const link = $("repoLink");
+    const row = $("repoLinkRow");
+    if (cfg.owner && cfg.repo && link) {
+      link.href = `https://github.com/${cfg.owner}/${cfg.repo}`;
+      if (row) row.style.display = "";
+    } else if (row) {
+      row.style.display = "none";
     }
   }
 
@@ -499,7 +504,8 @@
       pushCfgToInputs();
       log(`✅ Config loaded: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch})`, "ok");
     } catch (e) {
-      log("❌ Failed to parse saved config.", "err");
+      localStorage.removeItem(CFG_KEY);
+      log(`⚠️  Could not load saved config (${e.message}). It has been cleared — please re-enter your settings.`, "warn");
     }
   }
 

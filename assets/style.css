@@ -150,6 +150,9 @@ body {
   box-shadow: 0 0 0 3px rgba(0,212,255,.12);
 }
 .form-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.repo-link-row { margin-top: 10px; }
+.repo-link { color: var(--accent, #00b4ff); font-size: 13px; text-decoration: none; opacity: .85; }
+.repo-link:hover { opacity: 1; text-decoration: underline; }
 
 /* ===== BUTTONS ===== */
 .btn {
