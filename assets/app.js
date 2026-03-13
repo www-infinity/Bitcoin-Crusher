@@ -181,23 +181,22 @@
 
   /* ------------------------------------------------------------------
      AUTH TOKEN — from CI-injected GHP secret (window.BITCOIN_CRUSHER_TOKEN)
+     The token only needs Actions: Write (fine-grained PAT) or
+     workflow scope (classic PAT) to trigger workflow_dispatch.
+     It does NOT need Contents: Write — the server-side workflow
+     (save-spin.yml) handles the actual repo commit securely.
   ------------------------------------------------------------------ */
   function getAuthToken() {
     return (window.BITCOIN_CRUSHER_TOKEN || "").trim();
   }
 
   /* ------------------------------------------------------------------
-     GITHUB API — COMMIT FILE (via Contents API)
-     Uses PUT /repos/{owner}/{repo}/contents/{path} which requires the
-     GHP token to have Contents: Read and Write (fine-grained PAT) or
-     public_repo / repo scope (classic PAT).
+     GITHUB API — TRIGGER SAVE-SPIN WORKFLOW (via workflow_dispatch)
+     Uses POST /repos/{owner}/{repo}/actions/workflows/save-spin.yml/dispatches
+     which only requires Actions: Write scope on the token.
+     The actual file commit is performed securely inside save-spin.yml
+     using GITHUB_TOKEN (never exposed to the browser).
   ------------------------------------------------------------------ */
-
-  /** Encode a UTF-8 string to base64 (handles non-Latin1 / emoji characters). */
-  function utf8ToBase64(str) {
-    const bytes = new TextEncoder().encode(str);
-    return btoa(bytes.reduce((data, byte) => data + String.fromCharCode(byte), ""));
-  }
 
   async function commitSpinRecord(spinData) {
     const token = getAuthToken();
@@ -215,10 +214,8 @@
       return null;
     }
 
-    const content = JSON.stringify(spinData, null, 2) + "\n";
-    const contentBase64 = utf8ToBase64(content);
     const targetBranch = branch || "main";
-    const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filename}`;
+    const dispatchUrl = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/save-spin.yml/dispatches`;
     const headers = {
       Accept: "application/vnd.github+json",
       Authorization: `Bearer ${token}`,
@@ -227,38 +224,20 @@
     };
 
     try {
-      log(`📡 Committing → ${filename}`, "");
+      log(`📡 Submitting spin → ${filename}`, "");
 
-      // Check if the file already exists (needed to supply its SHA for updates).
-      let existingSha;
-      try {
-        const getRes = await fetch(`${fileUrl}?ref=${encodeURIComponent(targetBranch)}`, { headers });
-        if (getRes.ok) {
-          const existing = await getRes.json();
-          existingSha = existing.sha;
-        } else if (getRes.status !== 404) {
-          const err = await getRes.json().catch(() => ({}));
-          log(`⚠️  Could not check for existing file (${getRes.status}): ${err.message || getRes.statusText}`, "warn");
-        }
-      } catch (fetchErr) {
-        log(`⚠️  Network error checking for existing file: ${fetchErr.message}`, "warn");
-      }
-
-      const commitMsg = `🎰 Spin #${spinData.spinNumber}: ${spinData.result} [${(spinData.symbols || []).join(" ")}]`;
-      const identity = { name: "www-Infinity", email: "tigerbalm7623@gmail.com" };
-      const body = {
-        message: commitMsg,
-        content: contentBase64,
-        branch: targetBranch,
-        committer: identity,
-        author: identity,
-      };
-      if (existingSha) body.sha = existingSha;
-
-      const res = await fetch(fileUrl, {
-        method: "PUT",
+      const res = await fetch(dispatchUrl, {
+        method: "POST",
         headers,
-        body: JSON.stringify(body),
+        body: JSON.stringify({
+          ref: targetBranch,
+          inputs: {
+            // GitHub Actions inputs are always strings, so spin_data must be
+            // a JSON-encoded string here; save-spin.yml parses it with JSON.parse().
+            spin_data: JSON.stringify(spinData, null, 2),
+            filename,
+          },
+        }),
       });
 
       if (!res.ok) {
@@ -267,15 +246,12 @@
         return null;
       }
 
-      const data = await res.json();
-      const commitSha = data.commit && data.commit.sha ? data.commit.sha.slice(0, 7) : null;
-      const commitUrl =
-        data.commit && data.commit.html_url
-          ? data.commit.html_url
-          : `https://github.com/${owner}/${repo}/commits/${targetBranch}`;
-
-      log(`✅ Committed → ${filename}${commitSha ? ` (${commitSha})` : ""}`, "ok");
-      return { sha: commitSha, url: commitUrl, filename };
+      // workflow_dispatch returns 204 No Content — the run is queued.
+      // sha is null intentionally: the commit hasn't happened yet.
+      // addHistoryItem renders sha:null + url as a "📡 queued" link.
+      const actionsUrl = `https://github.com/${owner}/${repo}/actions`;
+      log(`✅ Spin queued → ${filename} (workflow running…)`, "ok");
+      return { sha: null, url: actionsUrl, filename };
     } catch (e) {
       log(`❌ Network error: ${e.message}`, "err");
       return null;
