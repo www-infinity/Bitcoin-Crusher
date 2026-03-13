@@ -1,0 +1,84 @@
+{
+  "spinNumber": 32,
+  "timestamp": "2026-03-13T11:08:13.602Z",
+  "symbols": [
+    "🚀",
+    "🚀",
+    "⭐",
+    "⭐",
+    "🔥"
+  ],
+  "symbolLabels": [
+    "PUMP",
+    "PUMP",
+    "STAR",
+    "STAR",
+    "FIRE"
+  ],
+  "symbolValues": [
+    9,
+    9,
+    2,
+    2,
+    3
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 50,
+  "totalScore": 994,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Geostationary ELM burst energy via Exergy destruction: Implications for aerospace",
+    "authors": [
+      "Dr. Kwame Asante",
+      "Prof. Ingrid Svensson",
+      "Dr. Rafael Torres"
+    ],
+    "journal": "Biomacromolecules",
+    "year": 2026,
+    "doi": "10.1038/advmat.2026.24616",
+    "impactFactor": 18.5,
+    "keywords": [
+      "white dwarf cooling track",
+      "flame temperature",
+      "magnetohydrodynamic wave",
+      "Hohmann transfer orbit",
+      "fluid dynamics",
+      "nuclear fusion",
+      "stellar evolution"
+    ],
+    "abstract": "Using isothermal thermoelectric figure of merit techniques, we demonstrate that lean systems exhibit remarkable lean behaviour under controlled conditions. The irreversible nature of the observed ignition delay time was confirmed through high-resolution neutron star merger analysis and first-principles calculations. We report weakly coupled properties of Lawson criterion value in aerospace.",
+    "introduction": "The field of aerospace has witnessed remarkable advances, driven by demand for collisionless systems with unprecedented aerospike nozzle expansion capabilities [1,2]. Central to these developments is the ability to precisely control thermal protection ablation rate at the cryogenic level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between Seebeck coefficient and plasma beta value has emerged as a critical factor governing macroscopic electron-degenerate behaviour [6]. Despite significant progress, the mechanistic origin of viscous divertor heat flux phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining plasma beta value spectroscopy, computational modelling, and incompressible characterisation.",
+    "methods": "All samples were prepared using a inviscid thermoelectric figure of merit synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed Schwarzschild radius analysis with a spatial resolution of 0.45 nm. Magnetised measurements were conducted between 4 K and 873 K using a custom-built divertor heat flux apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 624 eV. Statistical analysis applied a bootstrapping methodology (n = 669 iterations) at significance threshold p < 0.05.",
+    "results": "The supercritical specific impulse exhibited a well-defined geostationary signature consistent with theoretical predictions. Quantitative analysis revealed a supersonic dependence with R² = 0.903. The suborbital regime showed a 21.3-fold enhancement in entropy production rate performance relative to the control. Cross-validation using independent cosmic microwave background anisotropy measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of supercritical asymptotic giant branch at the critical threshold was accompanied by a characteristic deuterium-tritium fuel pellet shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed weakly coupled behaviour can be rationalised within a framework accounting for planetary nebula shell-mediated coupling between isothermal domains. Our findings align with recent reports on analogous aerospace systems while extending understanding to the previously unexplored laminar regime [9,10]. The 229.8% enhancement in thermoelectric figure of merit substantially exceeds state-of-the-art benchmarks, suggesting non-thermal specific impulse as a genuinely superior platform. From a practical standpoint, our MHD-stable fabrication route is scalable and compatible with existing magnetohydrodynamic wave-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component weakly coupled systems.",
+    "conclusion": "We demonstrated degenerate phase diagram boundary in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation hypersonic stellar opacity coefficient-based technologies. The collisionless framework introduced here is expected to stimulate further investigations at the intersection of Navier–Stokes solution and Langmuir probe characteristic research.",
+    "references": [
+      "[1] Patel, A. et al. ACS Catalysis 453, 3271 (2023). doi:10.xxxx/ref.2023.02926",
+      "[2] Patel, A. et al. Nanoscale 140, 6891 (2022). doi:10.xxxx/ref.2022.10702",
+      "[3] Patel, A. et al. Acta Materialia 448, 1441 (2019). doi:10.xxxx/ref.2019.81387",
+      "[4] Tanaka, Y. & Park, J. Science Advances 446, 9649 (2023). doi:10.xxxx/ref.2023.58255",
+      "[5] Williams, B. & Singh, P. Carbon 228, 3129 (2020). doi:10.xxxx/ref.2020.17237",
+      "[6] Zhang, Y. et al. ACS Nano 431, 3023 (2024). doi:10.xxxx/ref.2024.32117",
+      "[7] Al-Rashid, A. et al. ACS Catalysis 472, 4059 (2022). doi:10.xxxx/ref.2022.72510",
+      "[8] Zhang, Y. et al. Biomacromolecules 334, 5557 (2021). doi:10.xxxx/ref.2021.20538",
+      "[9] Patel, A. et al. Advanced Materials 129, 9011 (2020). doi:10.xxxx/ref.2020.29472",
+      "[10] Al-Rashid, A. et al. Angewandte Chemie International Edition 369, 6108 (2025). doi:10.xxxx/ref.2025.25314"
+    ],
+    "domains": [
+      "aerospace",
+      "fluid_dynamics",
+      "thermodynamics",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "combustion_chemistry",
+      "plasma_physics"
+    ],
+    "tokenValue": 50,
+    "spinNumber": 32,
+    "generatedAt": "2026-03-13T11:08:13.727Z",
+    "searchEnriched": false
+  }
+}
