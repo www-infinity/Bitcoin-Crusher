@@ -1,0 +1,88 @@
+{
+  "spinNumber": 46,
+  "timestamp": "2026-03-13T11:10:24.260Z",
+  "symbols": [
+    "🧱",
+    "₿",
+    "⭐",
+    "₿",
+    "∞"
+  ],
+  "symbolLabels": [
+    "BLOCK",
+    "BTC",
+    "STAR",
+    "BTC",
+    "INF"
+  ],
+  "symbolValues": [
+    4,
+    3,
+    2,
+    3,
+    8
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 40,
+  "totalScore": 1396,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Synergistic Fractal Hausdorff dimension and Molar mass distribution in Low-density Band gap engineering Matrices",
+    "authors": [
+      "Prof. Olga Petrenko",
+      "Dr. Naomi Watanabe",
+      "Dr. Emre Yilmaz"
+    ],
+    "journal": "Angewandte Chemie International Edition",
+    "year": 2026,
+    "doi": "10.1038/prl.2026.11031",
+    "impactFactor": 18.5,
+    "keywords": [
+      "digital signature scheme",
+      "SHA-256 hash digest",
+      "molar mass distribution",
+      "plasma beta parameter",
+      "mathematics",
+      "cryptography",
+      "polymer chemistry"
+    ],
+    "abstract": "The collision-resistant nature of the observed topological qubit was confirmed through high-resolution nanoparticle size distribution analysis and first-principles calculations. These findings open new avenues for the rational design of magnetised cosmic microwave background anisotropy-based architectures. Using error-mitigated degree of polymerisation techniques, we demonstrate that amphiphilic systems exhibit remarkable magnetically confined behaviour under controlled conditions.",
+    "introduction": "The field of solid state physics has witnessed remarkable advances, driven by demand for coherent systems with unprecedented neutron star equation of state capabilities [1,2]. Central to these developments is the ability to precisely control Betti number at the insulating level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between deuterium-tritium fuel pellet and Shannon entropy rate has emerged as a critical factor governing macroscopic turbo-coded behaviour [6]. Despite significant progress, the mechanistic origin of exotic Bloch sphere trajectory phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining Banach fixed-point spectroscopy, computational modelling, and thermonuclear characterisation.",
+    "methods": "All samples were prepared using a smooth trapdoor permutation synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed core-shell morphology analysis with a spatial resolution of 0.26 nm. Convective measurements were conducted between 4 K and 873 K using a custom-built glass transition temperature apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 493 eV. Statistical analysis applied a bootstrapping methodology (n = 943 iterations) at significance threshold p < 0.05.",
+    "results": "The topologically protected homotopy group exhibited a well-defined compact signature consistent with theoretical predictions. Quantitative analysis revealed a low-density dependence with R² = 0.960. The amphiphilic regime showed a 30.8-fold enhancement in divertor heat flux performance relative to the control. Cross-validation using independent Peierls distortion measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of compact gravitational wave strain at the critical threshold was accompanied by a characteristic Schwarzschild radius shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed adiabatic behaviour can be rationalised within a framework accounting for molar mass distribution-mediated coupling between sparse domains. Our findings align with recent reports on analogous solid state physics systems while extending understanding to the previously unexplored prime regime [9,10]. The 169.9% enhancement in Morse theory critical point substantially exceeds state-of-the-art benchmarks, suggesting surface-enhanced planetary nebula shell as a genuinely superior platform. From a practical standpoint, our insulating fabrication route is scalable and compatible with existing SHA-256 hash digest-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component supermassive systems.",
+    "conclusion": "We demonstrated turbulent gravitational wave strain in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation magnetised charge density wave order parameter-based technologies. The decoherence-free framework introduced here is expected to stimulate further investigations at the intersection of prime factorisation and homomorphic ciphertext research.",
+    "references": [
+      "[1] Al-Rashid, A. et al. Quantum Science and Technology 121, 6733 (2019). doi:10.xxxx/ref.2019.68497",
+      "[2] Williams, B. & Singh, P. Physical Review Letters 437, 7089 (2023). doi:10.xxxx/ref.2023.60898",
+      "[3] Zhang, Y. et al. Advanced Functional Materials 359, 4801 (2021). doi:10.xxxx/ref.2021.91952",
+      "[4] Müller, R. & Nakamura, T. Computational Materials Science 229, 6019 (2020). doi:10.xxxx/ref.2020.98901",
+      "[5] Patel, A. et al. Journal of the American Chemical Society 423, 5825 (2025). doi:10.xxxx/ref.2025.35685",
+      "[6] Volkov, A. K. et al. Advanced Materials 159, 8208 (2019). doi:10.xxxx/ref.2019.59557",
+      "[7] Patel, A. et al. Acta Materialia 191, 5801 (2021). doi:10.xxxx/ref.2021.60023",
+      "[8] Zhang, Y. et al. Journal of Materials Chemistry A 263, 3999 (2019). doi:10.xxxx/ref.2019.81690",
+      "[9] Al-Rashid, A. et al. Nanoscale 350, 5802 (2022). doi:10.xxxx/ref.2022.78787",
+      "[10] Chen, X. et al. ACS Catalysis 126, 4447 (2021). doi:10.xxxx/ref.2021.25115"
+    ],
+    "domains": [
+      "solid_state_physics",
+      "polymer_chemistry",
+      "nanotechnology",
+      "quantum_computing",
+      "cryptography",
+      "number_theory",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "mathematics",
+      "topology",
+      "information_theory"
+    ],
+    "tokenValue": 40,
+    "spinNumber": 46,
+    "generatedAt": "2026-03-13T11:10:24.442Z",
+    "searchEnriched": false
+  }
+}
