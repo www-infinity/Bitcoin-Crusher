@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ github.token }}
+          token: ${{ secrets.GHP }}
 
       - name: Validate filename
         env:
@@ -59,8 +59,8 @@ jobs:
               fs.writeFileSync('.git/COMMIT_MSG', '🎰 Spin: ' + filename);
             }
           "
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git config user.name 'www-Infinity'
+          git config user.email 'tigerbalm7623@gmail.com'
           git add "$FILENAME"
           git commit -F .git/COMMIT_MSG
           git push origin "HEAD:${GITHUB_REF_NAME}"

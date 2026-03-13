@@ -245,10 +245,13 @@
       }
 
       const commitMsg = `🎰 Spin #${spinData.spinNumber}: ${spinData.result} [${(spinData.symbols || []).join(" ")}]`;
+      const identity = { name: "www-Infinity", email: "tigerbalm7623@gmail.com" };
       const body = {
         message: commitMsg,
         content: contentBase64,
         branch: targetBranch,
+        committer: identity,
+        author: identity,
       };
       if (existingSha) body.sha = existingSha;
 
