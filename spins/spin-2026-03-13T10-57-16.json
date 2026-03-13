@@ -1,0 +1,87 @@
+{
+  "spinNumber": 7,
+  "timestamp": "2026-03-13T10:57:16.278Z",
+  "symbols": [
+    "🌕",
+    "💰",
+    "🍄",
+    "🌕",
+    "🔥"
+  ],
+  "symbolLabels": [
+    "MOON",
+    "BAG",
+    "MARIO",
+    "MOON",
+    "FIRE"
+  ],
+  "symbolValues": [
+    6,
+    4,
+    6,
+    6,
+    3
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 50,
+  "totalScore": 202,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Synchronously rotating Tidal locking timescale Coupling in Label-free selenology Architectures",
+    "authors": [
+      "Dr. Elena V. Sokolov",
+      "Prof. James K. Takahashi"
+    ],
+    "journal": "IEEE Transactions on Quantum Engineering",
+    "year": 2026,
+    "doi": "10.1038/acs.2026.13888",
+    "impactFactor": 18.5,
+    "keywords": [
+      "Alfvén speed",
+      "chromatin remodelling complex",
+      "NOₓ emission index",
+      "allosteric regulatory site",
+      "combustion chemistry",
+      "selenology",
+      "molecular biology"
+    ],
+    "abstract": "The non-equilibrium nature of the observed enthalpy of formation was confirmed through high-resolution impact melt glass analysis and first-principles calculations. These findings open new avenues for the rational design of isentropic enthalpy of formation-based architectures. Using volatile-rich molecular motor efficiency techniques, we demonstrate that differentiated systems exhibit remarkable post-translational behaviour under controlled conditions.",
+    "introduction": "The field of selenology has witnessed remarkable advances, driven by demand for redox-active systems with unprecedented plasma beta value capabilities [1,2]. Central to these developments is the ability to precisely control cytoskeletal tension at the magnetised level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between basidiospore germination and mass spectrometry proteome has emerged as a critical factor governing macroscopic impact-generated behaviour [6]. Despite significant progress, the mechanistic origin of polar magnetohydrodynamic wave phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining mantle convection cell spectroscopy, computational modelling, and lean characterisation.",
+    "methods": "All samples were prepared using a non-coding Gibbs free energy landscape synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed substrate channelling analysis with a spatial resolution of 0.30 nm. Glycosylated measurements were conducted between 4 K and 873 K using a custom-built ignition delay time apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 598 eV. Statistical analysis applied a bootstrapping methodology (n = 864 iterations) at significance threshold p < 0.05.",
+    "results": "The eccentric receptor binding affinity exhibited a well-defined polar signature consistent with theoretical predictions. Quantitative analysis revealed a viscoelastic dependence with R² = 0.913. The supercritical regime showed a 12.4-fold enhancement in adenosine triphosphate hydrolysis performance relative to the control. Cross-validation using independent phase diagram boundary measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of saprophytic magnetohydrodynamic wave at the critical threshold was accompanied by a characteristic post-translational modification site shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed entropic behaviour can be rationalised within a framework accounting for lunar mantle convection-mediated coupling between stoichiometric domains. Our findings align with recent reports on analogous selenology systems while extending understanding to the previously unexplored volcanic regime [9,10]. The 58.1% enhancement in lunar regolith composition substantially exceeds state-of-the-art benchmarks, suggesting eccentric phase diagram boundary as a genuinely superior platform. From a practical standpoint, our pharmacokinetic fabrication route is scalable and compatible with existing laminar burning velocity-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component differentiated systems.",
+    "conclusion": "We demonstrated epigenetic Langmuir probe characteristic in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation redox-active Seebeck coefficient-based technologies. The bioavailable framework introduced here is expected to stimulate further investigations at the intersection of detonation wave speed and metabolic flux analysis research.",
+    "references": [
+      "[1] Osei, H. et al. ACS Catalysis 139, 9500 (2021). doi:10.xxxx/ref.2021.15223",
+      "[2] Chen, X. et al. Journal of Materials Chemistry A 130, 6332 (2021). doi:10.xxxx/ref.2021.36342",
+      "[3] Zhang, Y. et al. Physical Chemistry Chemical Physics 353, 9409 (2021). doi:10.xxxx/ref.2021.53849",
+      "[4] Williams, B. & Singh, P. Nature Nanotechnology 151, 7549 (2025). doi:10.xxxx/ref.2025.42495",
+      "[5] Osei, H. et al. Advanced Functional Materials 408, 9754 (2024). doi:10.xxxx/ref.2024.79677",
+      "[6] Williams, B. & Singh, P. npj Computational Materials 122, 4074 (2025). doi:10.xxxx/ref.2025.58534",
+      "[7] Zhang, Y. et al. ACS Catalysis 499, 1903 (2025). doi:10.xxxx/ref.2025.90369",
+      "[8] Williams, B. & Singh, P. Acta Materialia 311, 4969 (2025). doi:10.xxxx/ref.2025.27835",
+      "[9] Tanaka, Y. & Park, J. Biomacromolecules 336, 8693 (2023). doi:10.xxxx/ref.2023.91670",
+      "[10] Osei, H. et al. Physical Chemistry Chemical Physics 415, 7452 (2024). doi:10.xxxx/ref.2024.10888"
+    ],
+    "domains": [
+      "selenology",
+      "tidal_mechanics",
+      "planetary_science",
+      "biophysics",
+      "molecular_biology",
+      "proteomics",
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics"
+    ],
+    "tokenValue": 50,
+    "spinNumber": 7,
+    "generatedAt": "2026-03-13T10:57:16.317Z",
+    "searchEnriched": false
+  }
+}
