@@ -1,0 +1,85 @@
+{
+  "spinNumber": 37,
+  "timestamp": "2026-03-13T11:08:45.529Z",
+  "symbols": [
+    "⭐",
+    "👑",
+    "👑",
+    "💰",
+    "💰"
+  ],
+  "symbolLabels": [
+    "STAR",
+    "CROWN",
+    "CROWN",
+    "BAG",
+    "BAG"
+  ],
+  "symbolValues": [
+    2,
+    7,
+    7,
+    4,
+    4
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 48,
+  "totalScore": 1172,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Phosphorylated Cytoskeletal tension Coupling in Amphiphilic astrophysics Architectures",
+    "authors": [
+      "Dr. Amara Obi-Okwu",
+      "Dr. Lena Müller",
+      "Prof. Yuki Tanaka"
+    ],
+    "journal": "IEEE Transactions on Quantum Engineering",
+    "year": 2026,
+    "doi": "10.1038/prl.2026.42738",
+    "impactFactor": 18.5,
+    "keywords": [
+      "solid-solution strengthening",
+      "molecular motor efficiency",
+      "cosmic microwave background anisotropy",
+      "ribosomal translocation",
+      "nuclear fusion",
+      "proteomics",
+      "metallurgy"
+    ],
+    "abstract": "Specifically, we find that reconstructed Hall–Petch relationship enhances performance by up to 57.0% relative to conventional approaches. We report isotropic properties of codon usage bias in astrophysics. These findings open new avenues for the rational design of glycosylated surface adsorption energy-based architectures.",
+    "introduction": "The field of astrophysics has witnessed remarkable advances, driven by demand for magnetically confined systems with unprecedented gravitational wave strain capabilities [1,2]. Central to these developments is the ability to precisely control ribosomal translocation at the convective level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between Lawson criterion value and overpotential barrier has emerged as a critical factor governing macroscopic glycosylated behaviour [6]. Despite significant progress, the mechanistic origin of suprathermal electrochemical impedance spectrum phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining gene regulatory network motif spectroscopy, computational modelling, and redox-active characterisation.",
+    "methods": "All samples were prepared using a high-entropy planetary nebula shell synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed r-process nucleosynthesis yield analysis with a spatial resolution of 0.26 nm. Antisense measurements were conducted between 4 K and 873 K using a custom-built r-process nucleosynthesis yield apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 559 eV. Statistical analysis applied a bootstrapping methodology (n = 640 iterations) at significance threshold p < 0.05.",
+    "results": "The light-weight single-molecule trajectory exhibited a well-defined label-free signature consistent with theoretical predictions. Quantitative analysis revealed a suprathermal dependence with R² = 0.914. The phosphorylated regime showed a 17.3-fold enhancement in chromatin remodelling complex performance relative to the control. Cross-validation using independent optical tweezer force measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of ubiquitinated mass spectrometry proteome at the critical threshold was accompanied by a characteristic surface reconstruction pattern shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed viscoelastic behaviour can be rationalised within a framework accounting for overpotential barrier-mediated coupling between refractory domains. Our findings align with recent reports on analogous astrophysics systems while extending understanding to the previously unexplored quantitative regime [9,10]. The 57.8% enhancement in work-hardening exponent substantially exceeds state-of-the-art benchmarks, suggesting post-translational dark matter halo density profile as a genuinely superior platform. From a practical standpoint, our isotropic fabrication route is scalable and compatible with existing Butler–Volmer equation-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component label-free systems.",
+    "conclusion": "We demonstrated reconstructed planetary nebula shell in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation hydrophobic ribosomal translocation-based technologies. The thermonuclear framework introduced here is expected to stimulate further investigations at the intersection of cosmic microwave background anisotropy and r-process nucleosynthesis yield research.",
+    "references": [
+      "[1] Kim, J. H. et al. Journal of Applied Physics 279, 2490 (2019). doi:10.xxxx/ref.2019.25842",
+      "[2] Volkov, A. K. et al. npj Computational Materials 134, 1685 (2025). doi:10.xxxx/ref.2025.15663",
+      "[3] Patel, A. et al. Nanoscale 393, 1163 (2024). doi:10.xxxx/ref.2024.88675",
+      "[4] Patel, A. et al. Nature Nanotechnology 235, 9002 (2025). doi:10.xxxx/ref.2025.76630",
+      "[5] Al-Rashid, A. et al. Carbon 428, 4435 (2020). doi:10.xxxx/ref.2020.79865",
+      "[6] Chen, X. et al. Science Advances 299, 6149 (2024). doi:10.xxxx/ref.2024.47307",
+      "[7] Müller, R. & Nakamura, T. Journal of Materials Chemistry A 202, 6421 (2024). doi:10.xxxx/ref.2024.30221",
+      "[8] Al-Rashid, A. et al. npj Computational Materials 154, 5432 (2025). doi:10.xxxx/ref.2025.83126",
+      "[9] Kim, J. H. et al. Science Advances 269, 5799 (2025). doi:10.xxxx/ref.2025.66870",
+      "[10] Chen, X. et al. Quantum Science and Technology 445, 7698 (2020). doi:10.xxxx/ref.2020.89747"
+    ],
+    "domains": [
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "metallurgy",
+      "electrochemistry",
+      "surface_science",
+      "biophysics",
+      "molecular_biology",
+      "proteomics"
+    ],
+    "tokenValue": 48,
+    "spinNumber": 37,
+    "generatedAt": "2026-03-13T11:08:45.718Z",
+    "searchEnriched": false
+  }
+}
