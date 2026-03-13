@@ -26,7 +26,7 @@ window.AUTH = (() => {
       "raw", new TextEncoder().encode(password), { name: "PBKDF2" }, false, ["deriveKey"]
     );
     return crypto.subtle.deriveKey(
-      { name: "PBKDF2", salt, iterations: 100000, hash: "SHA-256" },
+      { name: "PBKDF2", salt, iterations: 310000, hash: "SHA-256" },
       mat, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]
     );
   }
@@ -107,7 +107,7 @@ window.AUTH = (() => {
   async function register(username, email, password) {
     await ensureAdmin();
     if (!/^[a-zA-Z0-9_-]{2,32}$/.test(username))
-      throw new Error("Username must be 2–32 alphanumeric characters (_, - allowed).");
+      throw new Error("Username must be 2-32 alphanumeric characters (_, - allowed).");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
       throw new Error("Please enter a valid email address.");
     if (password.length < 4)

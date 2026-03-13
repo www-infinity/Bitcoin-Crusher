@@ -579,7 +579,7 @@
     // Save conversation if logged in
     const user = window.AUTH ? window.AUTH.currentUser() : null;
     if (user) {
-      const aiText = thinkDiv.querySelector(".chat-bubble") ? thinkDiv.querySelector(".chat-bubble").textContent : responseHtml.replace(/<[^>]+>/g, "");
+      const aiText = responseHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
       window.AUTH.saveConversation(user.username, rawInput, aiText).catch(() => {});
     }
   }

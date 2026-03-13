@@ -7,6 +7,16 @@
 window.RESEARCH = (() => {
   "use strict";
 
+  /** AbortSignal.timeout polyfill for browsers that don't support it */
+  function makeAbortSignal(ms) {
+    if (typeof AbortSignal !== "undefined" && typeof AbortSignal.timeout === "function") {
+      return AbortSignal.timeout(ms);
+    }
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), ms);
+    return ctrl.signal;
+  }
+
   /* ------------------------------------------------------------------
      SYMBOL → SCIENCE DOMAIN MAPPING
   ------------------------------------------------------------------ */
@@ -524,7 +534,7 @@ window.RESEARCH = (() => {
         "https://api.duckduckgo.com/?q=" +
         encodeURIComponent(query) +
         "&format=json&no_html=1&skip_disambig=1";
-      const res = await fetch(url, { signal: AbortSignal.timeout(6000) });
+      const res = await fetch(url, { signal: makeAbortSignal(6000) });
       if (!res.ok) return null;
       const data = await res.json();
       return {
@@ -547,7 +557,7 @@ window.RESEARCH = (() => {
         "https://archive.org/advancedsearch.php?q=" +
         encodeURIComponent(query) +
         "&fl[]=identifier&fl[]=title&fl[]=description&rows=4&output=json";
-      const res = await fetch(url, { signal: AbortSignal.timeout(6000) });
+      const res = await fetch(url, { signal: makeAbortSignal(6000) });
       if (!res.ok) return [];
       const data = await res.json();
       return (data.response && data.response.docs ? data.response.docs : []).map((d) => ({
