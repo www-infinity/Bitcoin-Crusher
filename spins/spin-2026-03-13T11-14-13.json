@@ -1,0 +1,88 @@
+{
+  "spinNumber": 58,
+  "timestamp": "2026-03-13T11:14:12.973Z",
+  "symbols": [
+    "🍄",
+    "🍄",
+    "🥇",
+    "🧱",
+    "🔥"
+  ],
+  "symbolLabels": [
+    "MARIO",
+    "MARIO",
+    "GOLD",
+    "BLOCK",
+    "FIRE"
+  ],
+  "symbolValues": [
+    6,
+    6,
+    10,
+    4,
+    3
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 58,
+  "totalScore": 1756,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "High-Performance Neuromorphic mycology: Quantum dot photoluminescence Synthesis and Characterisation",
+    "authors": [
+      "Dr. Kwame Asante",
+      "Prof. Ingrid Svensson",
+      "Dr. Rafael Torres"
+    ],
+    "journal": "Journal of Materials Chemistry A",
+    "year": 2026,
+    "doi": "10.1038/prl.2026.82956",
+    "impactFactor": 18.5,
+    "keywords": [
+      "surface plasmon resonance wavelength",
+      "detonation wave speed",
+      "electron cyclotron resonance",
+      "glass transition temperature",
+      "solid state physics",
+      "noble metal chemistry",
+      "plasma physics"
+    ],
+    "abstract": "The enzymatic nature of the observed wood-decay enzyme was confirmed through high-resolution phonon scattering rate analysis and first-principles calculations. These findings open new avenues for the rational design of homogeneous blood-brain barrier permeability-based architectures. Specifically, we find that biocompatible reactive oxygen species enhances performance by up to 196.8% relative to conventional approaches.",
+    "introduction": "The field of mycology has witnessed remarkable advances, driven by demand for non-equilibrium systems with unprecedented nanopore translocation signal capabilities [1,2]. Central to these developments is the ability to precisely control band gap engineering at the non-toxic level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between dikaryotic mycelium and laminar burning velocity has emerged as a critical factor governing macroscopic redox-active behaviour [6]. Despite significant progress, the mechanistic origin of collisionless charge density wave order parameter phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining action potential propagation velocity spectroscopy, computational modelling, and monodisperse characterisation.",
+    "methods": "All samples were prepared using a collisionless nanopore translocation signal synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed Sabatier principle optimum analysis with a spatial resolution of 0.54 nm. Biodegradable measurements were conducted between 4 K and 873 K using a custom-built equivalence ratio apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 411 eV. Statistical analysis applied a bootstrapping methodology (n = 319 iterations) at significance threshold p < 0.05.",
+    "results": "The endophytic ion channel gating kinetics exhibited a well-defined biodegradable signature consistent with theoretical predictions. Quantitative analysis revealed a biodegradable dependence with R² = 0.973. The biodegradable regime showed a 22.0-fold enhancement in fungal secretome performance relative to the control. Cross-validation using independent band gap engineering measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of saprophytic topological surface state at the critical threshold was accompanied by a characteristic carrier mobility tensor shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed single-atom behaviour can be rationalised within a framework accounting for mycorrhizal network hyphal anastomosis-mediated coupling between topological domains. Our findings align with recent reports on analogous mycology systems while extending understanding to the previously unexplored collisional regime [9,10]. The 206.6% enhancement in neural signal transduction pathway substantially exceeds state-of-the-art benchmarks, suggesting irreversible block copolymer microphase separation as a genuinely superior platform. From a practical standpoint, our rich fabrication route is scalable and compatible with existing density of states at Fermi energy-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component strongly correlated systems.",
+    "conclusion": "We demonstrated bioavailable surface plasmon resonance wavelength in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation non-thermal Seebeck coefficient-based technologies. The post-translational framework introduced here is expected to stimulate further investigations at the intersection of ignition delay time and carrier mobility tensor research.",
+    "references": [
+      "[1] Müller, R. & Nakamura, T. Physical Review Letters 102, 2860 (2024). doi:10.xxxx/ref.2024.45708",
+      "[2] Zhang, Y. et al. Acta Materialia 494, 1680 (2020). doi:10.xxxx/ref.2020.86295",
+      "[3] Tanaka, Y. & Park, J. ACS Catalysis 316, 5095 (2020). doi:10.xxxx/ref.2020.17936",
+      "[4] Tanaka, Y. & Park, J. Acta Materialia 361, 2334 (2024). doi:10.xxxx/ref.2024.21127",
+      "[5] Tanaka, Y. & Park, J. Quantum Science and Technology 396, 7135 (2021). doi:10.xxxx/ref.2021.84503",
+      "[6] Volkov, A. K. et al. Journal of Applied Physics 195, 8070 (2019). doi:10.xxxx/ref.2019.40162",
+      "[7] Zhang, Y. et al. Acta Materialia 290, 5365 (2025). doi:10.xxxx/ref.2025.55941",
+      "[8] Chen, X. et al. Angewandte Chemie International Edition 103, 5906 (2019). doi:10.xxxx/ref.2019.53088",
+      "[9] Kim, J. H. et al. Journal of Materials Chemistry A 135, 6268 (2023). doi:10.xxxx/ref.2023.50364",
+      "[10] Müller, R. & Nakamura, T. Physical Review Letters 324, 3898 (2023). doi:10.xxxx/ref.2023.03899"
+    ],
+    "domains": [
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "noble_metal_chemistry",
+      "catalysis",
+      "bioelectronics",
+      "solid_state_physics",
+      "polymer_chemistry",
+      "nanotechnology",
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics"
+    ],
+    "tokenValue": 58,
+    "spinNumber": 58,
+    "generatedAt": "2026-03-13T11:14:13.159Z",
+    "searchEnriched": false
+  }
+}
