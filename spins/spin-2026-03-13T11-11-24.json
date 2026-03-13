@@ -1,0 +1,88 @@
+{
+  "spinNumber": 52,
+  "timestamp": "2026-03-13T11:11:24.646Z",
+  "symbols": [
+    "⭐",
+    "🔥",
+    "🍄",
+    "💎",
+    "⭐"
+  ],
+  "symbolLabels": [
+    "STAR",
+    "FIRE",
+    "MARIO",
+    "DIAM",
+    "STAR"
+  ],
+  "symbolValues": [
+    2,
+    3,
+    6,
+    5,
+    2
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 36,
+  "totalScore": 1560,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Metastable Control of Entropy production rate for Advanced astrophysics Applications",
+    "authors": [
+      "Prof. Olga Petrenko",
+      "Dr. Naomi Watanabe",
+      "Dr. Emre Yilmaz"
+    ],
+    "journal": "Nature Materials",
+    "year": 2026,
+    "doi": "10.1038/acsnano.2026.15119",
+    "impactFactor": 18.5,
+    "keywords": [
+      "plasma confinement time",
+      "r-process nucleosynthesis yield",
+      "planetary nebula shell",
+      "superlattice period",
+      "thermodynamics",
+      "nuclear fusion",
+      "pharmacology"
+    ],
+    "abstract": "Using isentropic allosteric regulatory site techniques, we demonstrate that magnetically confined systems exhibit remarkable magnetised behaviour under controlled conditions. Our results reveal a previously uncharacterised correlation between equivalence ratio and flame temperature, with broad implications for fundamental science and next-generation technology. These findings open new avenues for the rational design of selective tokamak aspect ratio-based architectures.",
+    "introduction": "The field of astrophysics has witnessed remarkable advances, driven by demand for electron-degenerate systems with unprecedented fullerene cage capabilities [1,2]. Central to these developments is the ability to precisely control soot formation pathway at the semiconducting level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between electron cyclotron resonance and dikaryotic mycelium has emerged as a critical factor governing macroscopic rich behaviour [6]. Despite significant progress, the mechanistic origin of trigonal nanocomposite matrix phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining NOₓ emission index spectroscopy, computational modelling, and multifunctional characterisation.",
+    "methods": "All samples were prepared using a turbulent phase diagram boundary synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed exergy destruction analysis with a spatial resolution of 0.24 nm. Non-thermal measurements were conducted between 4 K and 873 K using a custom-built Dirac cone apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 593 eV. Statistical analysis applied a bootstrapping methodology (n = 766 iterations) at significance threshold p < 0.05.",
+    "results": "The self-healing powder diffraction pattern exhibited a well-defined ectomycorrhizal signature consistent with theoretical predictions. Quantitative analysis revealed a stoichiometric dependence with R² = 0.962. The magnetised regime showed a 18.3-fold enhancement in soot formation pathway performance relative to the control. Cross-validation using independent ion acoustic instability measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of supercritical space group symmetry at the critical threshold was accompanied by a characteristic dark matter halo density profile shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed premixed behaviour can be rationalised within a framework accounting for elastic modulus tensor-mediated coupling between ferroelectric domains. Our findings align with recent reports on analogous astrophysics systems while extending understanding to the previously unexplored defect-engineered regime [9,10]. The 229.6% enhancement in phonon dispersion curve substantially exceeds state-of-the-art benchmarks, suggesting monoclinic exergy destruction as a genuinely superior platform. From a practical standpoint, our biotrophic fabrication route is scalable and compatible with existing bioavailability coefficient-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component superhydrophobic systems.",
+    "conclusion": "We demonstrated saprophytic ignition delay time in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation multifunctional metabolic flux analysis-based technologies. The rich framework introduced here is expected to stimulate further investigations at the intersection of powder diffraction pattern and tokamak aspect ratio research.",
+    "references": [
+      "[1] Kim, J. H. et al. Nature Materials 430, 3434 (2021). doi:10.xxxx/ref.2021.08223",
+      "[2] Al-Rashid, A. et al. Quantum Science and Technology 410, 7334 (2020). doi:10.xxxx/ref.2020.17357",
+      "[3] Williams, B. & Singh, P. Journal of Materials Chemistry A 390, 7525 (2025). doi:10.xxxx/ref.2025.83052",
+      "[4] Al-Rashid, A. et al. Computational Materials Science 435, 8378 (2025). doi:10.xxxx/ref.2025.63259",
+      "[5] Chen, X. et al. Nature Nanotechnology 371, 1080 (2025). doi:10.xxxx/ref.2025.48306",
+      "[6] Müller, R. & Nakamura, T. Advanced Materials 129, 5989 (2022). doi:10.xxxx/ref.2022.67282",
+      "[7] Tanaka, Y. & Park, J. Physical Review Letters 420, 4557 (2019). doi:10.xxxx/ref.2019.13689",
+      "[8] Osei, H. et al. Proceedings of the National Academy of Sciences 335, 5168 (2024). doi:10.xxxx/ref.2024.27215",
+      "[9] Kim, J. H. et al. Journal of the American Chemical Society 108, 9480 (2022). doi:10.xxxx/ref.2022.28463",
+      "[10] Kim, J. H. et al. IEEE Transactions on Quantum Engineering 330, 6509 (2022). doi:10.xxxx/ref.2022.19205"
+    ],
+    "domains": [
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "materials_science",
+      "crystallography",
+      "carbon_chemistry"
+    ],
+    "tokenValue": 36,
+    "spinNumber": 52,
+    "generatedAt": "2026-03-13T11:11:24.800Z",
+    "searchEnriched": false
+  }
+}
