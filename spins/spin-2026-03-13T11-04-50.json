@@ -1,0 +1,87 @@
+{
+  "spinNumber": 15,
+  "timestamp": "2026-03-13T11:04:49.883Z",
+  "symbols": [
+    "💎",
+    "🚀",
+    "🍄",
+    "🍄",
+    "∞"
+  ],
+  "symbolLabels": [
+    "DIAM",
+    "PUMP",
+    "MARIO",
+    "MARIO",
+    "INF"
+  ],
+  "symbolValues": [
+    5,
+    9,
+    6,
+    6,
+    8
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 68,
+  "totalScore": 412,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Role of Crystalline lattice parameter in Governing Semiconducting Behaviour in crystallography",
+    "authors": [
+      "Prof. Satoshi Nakamura",
+      "Dr. Priya Krishnamurthy"
+    ],
+    "journal": "Quantum Science and Technology",
+    "year": 2026,
+    "doi": "10.1038/sciadv.2026.33364",
+    "impactFactor": 18.5,
+    "keywords": [
+      "hypersonic boundary layer",
+      "channel capacity bound",
+      "single-walled carbon nanotube",
+      "heat capacity anomaly",
+      "biochemistry",
+      "mathematics",
+      "topology"
+    ],
+    "abstract": "The geostationary nature of the observed mycorrhizal network hyphal anastomosis was confirmed through high-resolution substrate channelling analysis and first-principles calculations. Our results reveal a previously uncharacterised correlation between manifold holonomy and phosphorylation cascade, with broad implications for fundamental science and next-generation technology. These findings open new avenues for the rational design of simply connected Fourier mode-based architectures.",
+    "introduction": "The field of materials science has witnessed remarkable advances, driven by demand for exotic systems with unprecedented unit cell volume capabilities [1,2]. Central to these developments is the ability to precisely control therapeutic index at the isentropic level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between ion thruster efficiency and Riemann hypothesis zero has emerged as a critical factor governing macroscopic tetragonal behaviour [6]. Despite significant progress, the mechanistic origin of symplectic dislocation density phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining Kolmogorov length scale spectroscopy, computational modelling, and compact characterisation.",
+    "methods": "All samples were prepared using a quasi-static Morse theory critical point synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed fungal secretome analysis with a spatial resolution of 0.41 nm. Compact measurements were conducted between 4 K and 873 K using a custom-built van der Waals heterostructure apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 469 eV. Statistical analysis applied a bootstrapping methodology (n = 305 iterations) at significance threshold p < 0.05.",
+    "results": "The conjugated exergy destruction exhibited a well-defined aromatic signature consistent with theoretical predictions. Quantitative analysis revealed a geostationary dependence with R² = 0.886. The bioavailable regime showed a 41.7-fold enhancement in spectral graph eigenvalue performance relative to the control. Cross-validation using independent topological invariant measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of hypersonic aerospike nozzle expansion at the critical threshold was accompanied by a characteristic ergot alkaloid shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed incompressible behaviour can be rationalised within a framework accounting for rate-distortion function-mediated coupling between allosteric domains. Our findings align with recent reports on analogous materials science systems while extending understanding to the previously unexplored irreversible regime [9,10]. The 148.5% enhancement in Shannon entropy rate substantially exceeds state-of-the-art benchmarks, suggesting suborbital electron density map as a genuinely superior platform. From a practical standpoint, our non-toxic fabrication route is scalable and compatible with existing martensitic phase transformation-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component non-equilibrium systems.",
+    "conclusion": "We demonstrated ectomycorrhizal minimum description length in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation hexagonal close-packed spectral graph eigenvalue-based technologies. The redox-active framework introduced here is expected to stimulate further investigations at the intersection of phonon dispersion curve and Carnot efficiency limit research.",
+    "references": [
+      "[1] Osei, H. et al. ACS Nano 150, 9519 (2023). doi:10.xxxx/ref.2023.55243",
+      "[2] Müller, R. & Nakamura, T. Computational Materials Science 307, 3446 (2022). doi:10.xxxx/ref.2022.24270",
+      "[3] Al-Rashid, A. et al. Nature Materials 211, 6712 (2023). doi:10.xxxx/ref.2023.19215",
+      "[4] Tanaka, Y. & Park, J. Nanoscale 403, 5510 (2021). doi:10.xxxx/ref.2021.43450",
+      "[5] Williams, B. & Singh, P. Acta Materialia 437, 5552 (2022). doi:10.xxxx/ref.2022.81366",
+      "[6] Kim, J. H. et al. npj Computational Materials 413, 8071 (2023). doi:10.xxxx/ref.2023.00021",
+      "[7] Müller, R. & Nakamura, T. Nanoscale 251, 9269 (2020). doi:10.xxxx/ref.2020.40654",
+      "[8] Williams, B. & Singh, P. Nature Biotechnology 192, 5173 (2025). doi:10.xxxx/ref.2025.07285",
+      "[9] Chen, X. et al. Advanced Materials 259, 8547 (2022). doi:10.xxxx/ref.2022.19904",
+      "[10] Osei, H. et al. Nanoscale 112, 8131 (2024). doi:10.xxxx/ref.2024.80895"
+    ],
+    "domains": [
+      "materials_science",
+      "crystallography",
+      "carbon_chemistry",
+      "aerospace",
+      "fluid_dynamics",
+      "thermodynamics",
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "mathematics",
+      "topology",
+      "information_theory"
+    ],
+    "tokenValue": 68,
+    "spinNumber": 15,
+    "generatedAt": "2026-03-13T11:04:50.045Z",
+    "searchEnriched": false
+  }
+}
