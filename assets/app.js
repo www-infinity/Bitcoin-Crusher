@@ -130,23 +130,27 @@
         const endY = -(count - 1) * SYMBOL_HEIGHT;
         stripEl.style.transform = `translateY(${endY}px)`;
 
-        stripEl.addEventListener(
-          "transitionend",
-          () => {
-            // Snap: set strip to show just the final symbol (clean state)
-            stripEl.innerHTML = "";
-            const finalDiv = document.createElement("div");
-            finalDiv.className = "reel-symbol";
-            finalDiv.innerHTML = `<span>${finalSymbol.emoji}</span><span class="sym-label">${finalSymbol.label}</span>`;
-            stripEl.appendChild(finalDiv);
-            stripEl.style.transition = "none";
-            stripEl.style.transform = "translateY(0)";
+        // Snap the reel to the final symbol (used by both transitionend and the fallback)
+        let settled = false;
+        function settleReel() {
+          if (settled) return;
+          settled = true;
+          stripEl.innerHTML = "";
+          const finalDiv = document.createElement("div");
+          finalDiv.className = "reel-symbol";
+          finalDiv.innerHTML = `<span>${finalSymbol.emoji}</span><span class="sym-label">${finalSymbol.label}</span>`;
+          stripEl.appendChild(finalDiv);
+          stripEl.style.transition = "none";
+          stripEl.style.transform = "translateY(0)";
+          reelEl.classList.remove("spinning");
+          resolve();
+        }
 
-            reelEl.classList.remove("spinning");
-            resolve();
-          },
-          { once: true }
-        );
+        stripEl.addEventListener("transitionend", settleReel, { once: true });
+
+        // Fallback: guarantee the reel stops even if transitionend never fires
+        // (can happen on tab-blur, browser quirks, or rapid interactions)
+        setTimeout(settleReel, duration + 500);
       }, delay);
     });
   }
@@ -176,10 +180,22 @@
   }
 
   /* ------------------------------------------------------------------
+     AUTH TOKEN — precedence: sessionStorage → cfg.token → pre-built secret
+  ------------------------------------------------------------------ */
+  function getAuthToken() {
+    return (
+      sessionStorage.getItem("gh_token_session") ||
+      cfg.token ||
+      window.BITCOIN_CRUSHER_TOKEN ||
+      ""
+    ).trim();
+  }
+
+  /* ------------------------------------------------------------------
      GITHUB API — COMMIT FILE
   ------------------------------------------------------------------ */
   async function commitSpinRecord(spinData) {
-    const token = (sessionStorage.getItem("gh_token_session") || cfg.token || "").trim();
+    const token = getAuthToken();
     const { owner, repo, branch } = cfg;
 
     if (!token || !owner || !repo) {
@@ -520,12 +536,25 @@
   function init() {
     prefillFromRepoMeta();
     loadCfg();
+
+    // Auto-configure from the CI-injected GHP secret when no session token exists
+    if (!cfg.token && window.BITCOIN_CRUSHER_TOKEN) {
+      cfg.token = window.BITCOIN_CRUSHER_TOKEN;
+      sessionStorage.setItem("gh_token_session", cfg.token);
+      const safe = { owner: cfg.owner, repo: cfg.repo, branch: cfg.branch };
+      localStorage.setItem(CFG_KEY, JSON.stringify(safe));
+    }
+
     pushCfgToInputs();
     initReels();
     animateTicker();
     wireEvents();
     log("🧱 Bitcoin Crusher — Infinity Slot Machine ready.");
-    log("⚙️  Set your GitHub token in the config panel to commit spins to the repo.");
+    if (cfg.token) {
+      log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — token active.`, "ok");
+    } else {
+      log("⚙️  Set your GitHub token in the config panel to commit spins to the repo.");
+    }
     log("🎰  Hit SPIN & CRUSH (or press Space) to start!");
   }
 
