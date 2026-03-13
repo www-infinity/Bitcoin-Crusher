@@ -187,13 +187,18 @@
   }
 
   /* ------------------------------------------------------------------
-     GITHUB API — COMMIT FILE (via Actions workflow_dispatch)
-     Uses save-spin.yml which commits with GITHUB_TOKEN (contents:write).
-     Requires the GHP token to have actions:write (fine-grained PAT) or
-     repo scope (classic PAT) — avoids the need for contents:write on
-     the PAT itself, fixing 403 "Resource not accessible by personal
-     access token" errors.
+     GITHUB API — COMMIT FILE (via Contents API)
+     Uses PUT /repos/{owner}/{repo}/contents/{path} which requires the
+     GHP token to have Contents: Read and Write (fine-grained PAT) or
+     public_repo / repo scope (classic PAT).
   ------------------------------------------------------------------ */
+
+  /** Encode a UTF-8 string to base64 (handles non-Latin1 / emoji characters). */
+  function utf8ToBase64(str) {
+    const bytes = new TextEncoder().encode(str);
+    return btoa(bytes.reduce((data, byte) => data + String.fromCharCode(byte), ""));
+  }
+
   async function commitSpinRecord(spinData) {
     const token = getAuthToken();
     const { owner, repo, branch } = cfg;
@@ -209,29 +214,47 @@
       log("❌ Invalid spin filename — aborting commit.", "err");
       return null;
     }
-    const content = JSON.stringify(spinData, null, 2);
 
-    // Trigger the save-spin workflow which commits using GITHUB_TOKEN
-    const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/save-spin.yml/dispatches`;
-
-    const body = {
-      ref: branch || "main",
-      inputs: {
-        spin_data: content,
-        filename: filename,
-      },
+    const content = JSON.stringify(spinData, null, 2) + "\n";
+    const contentBase64 = utf8ToBase64(content);
+    const targetBranch = branch || "main";
+    const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filename}`;
+    const headers = {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      "X-GitHub-Api-Version": "2022-11-28",
     };
 
     try {
       log(`📡 Committing → ${filename}`, "");
-      const res = await fetch(url, {
-        method: "POST",
-        headers: {
-          Accept: "application/vnd.github+json",
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-          "X-GitHub-Api-Version": "2022-11-28",
-        },
+
+      // Check if the file already exists (needed to supply its SHA for updates).
+      let existingSha;
+      try {
+        const getRes = await fetch(`${fileUrl}?ref=${encodeURIComponent(targetBranch)}`, { headers });
+        if (getRes.ok) {
+          const existing = await getRes.json();
+          existingSha = existing.sha;
+        } else if (getRes.status !== 404) {
+          const err = await getRes.json().catch(() => ({}));
+          log(`⚠️  Could not check for existing file (${getRes.status}): ${err.message || getRes.statusText}`, "warn");
+        }
+      } catch (fetchErr) {
+        log(`⚠️  Network error checking for existing file: ${fetchErr.message}`, "warn");
+      }
+
+      const commitMsg = `🎰 Spin #${spinData.spinNumber}: ${spinData.result} [${(spinData.symbols || []).join(" ")}]`;
+      const body = {
+        message: commitMsg,
+        content: contentBase64,
+        branch: targetBranch,
+      };
+      if (existingSha) body.sha = existingSha;
+
+      const res = await fetch(fileUrl, {
+        method: "PUT",
+        headers,
         body: JSON.stringify(body),
       });
 
@@ -241,9 +264,15 @@
         return null;
       }
 
-      // workflow_dispatch returns 204 No Content on success (no SHA yet)
-      log(`✅ Spin queued for commit → ${filename}`, "ok");
-      return { sha: null, url: `https://github.com/${owner}/${repo}/actions`, filename };
+      const data = await res.json();
+      const commitSha = data.commit && data.commit.sha ? data.commit.sha.slice(0, 7) : null;
+      const commitUrl =
+        data.commit && data.commit.html_url
+          ? data.commit.html_url
+          : `https://github.com/${owner}/${repo}/commits/${targetBranch}`;
+
+      log(`✅ Committed → ${filename}${commitSha ? ` (${commitSha})` : ""}`, "ok");
+      return { sha: commitSha, url: commitUrl, filename };
     } catch (e) {
       log(`❌ Network error: ${e.message}`, "err");
       return null;
@@ -544,9 +573,9 @@
     wireEvents();
     log("🧱 Bitcoin Crusher — Infinity Slot Machine ready.");
     if (window.BITCOIN_CRUSHER_TOKEN && cfg.owner && cfg.repo) {
-      log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — GHP secret active, every spin will be committed via Actions.`, "ok");
+      log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — GHP secret active, every spin will be committed.`, "ok");
     } else if (window.BITCOIN_CRUSHER_TOKEN) {
-      log("✅ GHP secret active — set Owner/Repo above and save to enable auto-commit via Actions on each spin.", "ok");
+      log("✅ GHP secret active — set Owner/Repo above and save to enable auto-commit on each spin.", "ok");
     } else {
       log("⚠️  GHP secret not found — spins are local only (no commit will be made).", "warn");
     }
