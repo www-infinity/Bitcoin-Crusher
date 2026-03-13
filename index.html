@@ -158,6 +158,40 @@
       </div>
       <div class="history" id="history"></div>
     </section>
+
+    <!-- DEVICE IDENTITY -->
+    <section class="panel" id="identityPanel">
+      <div class="panel-head">
+        <span class="panel-title">🪪 Device Identity</span>
+        <span class="panel-hint">Your 8-block signal address</span>
+      </div>
+      <div class="panel-body">
+        <div class="identity-display" id="identityDisplay" title="Your unique 8-block device identifier">
+          <span class="identity-blocks" id="identityBlocks">········</span>
+        </div>
+        <div class="identity-meta" id="identityMeta"></div>
+        <div class="form-actions">
+          <button class="btn btn-ghost" id="btnCopyId">📋 Copy ID</button>
+          <button class="btn btn-ghost" id="btnRegenId">🔄 Regenerate</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI SIGNAL ANALYSIS -->
+    <section class="panel" id="aiPanel">
+      <div class="panel-head">
+        <span class="panel-title">🤖 AI Signal Analysis</span>
+        <span class="panel-hint">Pattern recognition · no external dependencies</span>
+      </div>
+      <div class="panel-body">
+        <div class="ai-status" id="aiStatus">
+          <span class="ai-dot" id="aiDot"></span>
+          <span id="aiStatusText">Awaiting signal data…</span>
+        </div>
+        <pre class="console-log ai-log" id="aiLog">Signal engine ready. Spin to generate pattern data.\n</pre>
+        <div class="ai-prediction" id="aiPrediction"></div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
