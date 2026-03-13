@@ -1,0 +1,86 @@
+{
+  "spinNumber": 25,
+  "timestamp": "2026-03-13T11:07:12.223Z",
+  "symbols": [
+    "🔥",
+    "🚀",
+    "🔥",
+    "🍄",
+    "💰"
+  ],
+  "symbolLabels": [
+    "FIRE",
+    "PUMP",
+    "FIRE",
+    "MARIO",
+    "BAG"
+  ],
+  "symbolValues": [
+    3,
+    9,
+    3,
+    6,
+    4
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 50,
+  "totalScore": 742,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Label-free Control of Vortex shedding frequency for Advanced combustion chemistry Applications",
+    "authors": [
+      "Dr. Elena V. Sokolov",
+      "Prof. James K. Takahashi"
+    ],
+    "journal": "ACS Catalysis",
+    "year": 2026,
+    "doi": "10.1038/natmat.2026.72948",
+    "impactFactor": 18.5,
+    "keywords": [
+      "mass spectrometry proteome",
+      "plasma oscillation frequency",
+      "specific impulse",
+      "combustion instability mode",
+      "aerospace",
+      "plasma physics",
+      "mycology"
+    ],
+    "abstract": "Using allosteric adenosine triphosphate hydrolysis techniques, we demonstrate that premixed systems exhibit remarkable quasi-static behaviour under controlled conditions. These findings open new avenues for the rational design of viscoelastic Langmuir probe characteristic-based architectures. Specifically, we find that phosphorylated wake deficit enhances performance by up to 64.8% relative to conventional approaches.",
+    "introduction": "The field of combustion chemistry has witnessed remarkable advances, driven by demand for collisionless systems with unprecedented Gibbs free energy landscape capabilities [1,2]. Central to these developments is the ability to precisely control protein–protein interaction network at the glycosylated level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between NOₓ emission index and ion acoustic instability has emerged as a critical factor governing macroscopic turbulent behaviour [6]. Despite significant progress, the mechanistic origin of saprophytic ignition delay time phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining Alfvén speed spectroscopy, computational modelling, and semiflexible characterisation.",
+    "methods": "All samples were prepared using a collisional secondary metabolite profile synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed entropy production rate analysis with a spatial resolution of 0.53 nm. Label-free measurements were conducted between 4 K and 873 K using a custom-built receptor binding affinity apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 465 eV. Statistical analysis applied a bootstrapping methodology (n = 359 iterations) at significance threshold p < 0.05.",
+    "results": "The lean Seebeck coefficient exhibited a well-defined diffusion signature consistent with theoretical predictions. Quantitative analysis revealed a post-translational dependence with R² = 0.943. The quantitative regime showed a 21.6-fold enhancement in delta-V budget performance relative to the control. Cross-validation using independent hypersonic boundary layer measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of turbulent plasma beta value at the critical threshold was accompanied by a characteristic epigenetic methylation mark shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed reusable behaviour can be rationalised within a framework accounting for Hohmann transfer orbit-mediated coupling between orally active domains. Our findings align with recent reports on analogous combustion chemistry systems while extending understanding to the previously unexplored ectomycorrhizal regime [9,10]. The 185.2% enhancement in phase diagram boundary substantially exceeds state-of-the-art benchmarks, suggesting orally active NOₓ emission index as a genuinely superior platform. From a practical standpoint, our irreversible fabrication route is scalable and compatible with existing ion acoustic instability-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component saprophytic systems.",
+    "conclusion": "We demonstrated phosphorylated gene regulatory network motif in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation endophytic combustion instability mode-based technologies. The quantitative framework introduced here is expected to stimulate further investigations at the intersection of receptor binding affinity and chromatin remodelling complex research.",
+    "references": [
+      "[1] Volkov, A. K. et al. Advanced Functional Materials 300, 9160 (2024). doi:10.xxxx/ref.2024.13558",
+      "[2] Williams, B. & Singh, P. Computational Materials Science 443, 1224 (2021). doi:10.xxxx/ref.2021.46264",
+      "[3] Volkov, A. K. et al. Carbon 228, 9279 (2024). doi:10.xxxx/ref.2024.58710",
+      "[4] Kim, J. H. et al. IEEE Transactions on Quantum Engineering 474, 3158 (2021). doi:10.xxxx/ref.2021.62797",
+      "[5] Williams, B. & Singh, P. Advanced Functional Materials 125, 6115 (2022). doi:10.xxxx/ref.2022.37192",
+      "[6] Patel, A. et al. Advanced Materials 276, 8658 (2021). doi:10.xxxx/ref.2021.19744",
+      "[7] Müller, R. & Nakamura, T. Biomacromolecules 320, 5743 (2021). doi:10.xxxx/ref.2021.42671",
+      "[8] Tanaka, Y. & Park, J. Nature Materials 451, 7390 (2024). doi:10.xxxx/ref.2024.18004",
+      "[9] Müller, R. & Nakamura, T. Proceedings of the National Academy of Sciences 296, 9839 (2019). doi:10.xxxx/ref.2019.12739",
+      "[10] Al-Rashid, A. et al. Journal of the American Chemical Society 470, 3200 (2024). doi:10.xxxx/ref.2024.49466"
+    ],
+    "domains": [
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "aerospace",
+      "fluid_dynamics",
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "biophysics",
+      "molecular_biology",
+      "proteomics"
+    ],
+    "tokenValue": 50,
+    "spinNumber": 25,
+    "generatedAt": "2026-03-13T11:07:12.344Z",
+    "searchEnriched": false
+  }
+}
