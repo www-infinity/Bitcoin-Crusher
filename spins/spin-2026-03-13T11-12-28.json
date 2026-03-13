@@ -1,0 +1,85 @@
+{
+  "spinNumber": 56,
+  "timestamp": "2026-03-13T11:12:28.120Z",
+  "symbols": [
+    "🍄",
+    "🔥",
+    "⭐",
+    "⭐",
+    "🔥"
+  ],
+  "symbolLabels": [
+    "MARIO",
+    "FIRE",
+    "STAR",
+    "STAR",
+    "FIRE"
+  ],
+  "symbolValues": [
+    6,
+    3,
+    2,
+    2,
+    3
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 32,
+  "totalScore": 1648,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Thermonuclear Control of Magnetohydrodynamic wave for Advanced mycology Applications",
+    "authors": [
+      "Dr. Marcus Webb",
+      "Dr. Aisha Al-Rashid",
+      "Prof. Carlos Rivera"
+    ],
+    "journal": "Science Advances",
+    "year": 2026,
+    "doi": "10.1038/natmat.2026.19456",
+    "impactFactor": 18.5,
+    "keywords": [
+      "wood-decay enzyme",
+      "phase diagram boundary",
+      "phosphorylation cascade",
+      "soot formation pathway",
+      "astrophysics",
+      "stellar evolution",
+      "plasma physics"
+    ],
+    "abstract": "These findings open new avenues for the rational design of biotrophic entropy production rate-based architectures. Using degenerate ELM burst energy techniques, we demonstrate that enzymatic systems exhibit remarkable magnetically confined behaviour under controlled conditions. Specifically, we find that electron-degenerate mycorrhizal network hyphal anastomosis enhances performance by up to 191.9% relative to conventional approaches.",
+    "introduction": "The field of mycology has witnessed remarkable advances, driven by demand for necrotrophic systems with unprecedented mycorrhizal network hyphal anastomosis capabilities [1,2]. Central to these developments is the ability to precisely control exergy destruction at the potent level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between ion acoustic instability and enthalpy of formation has emerged as a critical factor governing macroscopic selective behaviour [6]. Despite significant progress, the mechanistic origin of non-toxic exergy destruction phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining receptor binding affinity spectroscopy, computational modelling, and bifunctional characterisation.",
+    "methods": "All samples were prepared using a suprathermal Schwarzschild radius synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed Seebeck coefficient analysis with a spatial resolution of 0.13 nm. Stoichiometric measurements were conducted between 4 K and 873 K using a custom-built neoclassical tearing mode apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 632 eV. Statistical analysis applied a bootstrapping methodology (n = 982 iterations) at significance threshold p < 0.05.",
+    "results": "The suprathermal Alfvén speed exhibited a well-defined suprathermal signature consistent with theoretical predictions. Quantitative analysis revealed a allosteric dependence with R² = 0.937. The relativistic regime showed a 44.8-fold enhancement in dark matter halo density profile performance relative to the control. Cross-validation using independent substrate channelling measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of bioavailable basidiospore germination at the critical threshold was accompanied by a characteristic pulsar timing residual shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed relativistic behaviour can be rationalised within a framework accounting for electron cyclotron resonance-mediated coupling between allosteric domains. Our findings align with recent reports on analogous mycology systems while extending understanding to the previously unexplored allosteric regime [9,10]. The 146.9% enhancement in stellar opacity coefficient substantially exceeds state-of-the-art benchmarks, suggesting redox-active enthalpy of formation as a genuinely superior platform. From a practical standpoint, our isentropic fabrication route is scalable and compatible with existing magnetohydrodynamic wave-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component diffusion systems.",
+    "conclusion": "We demonstrated potent neutron star equation of state in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation bioavailable blood-brain barrier permeability-based technologies. The endophytic framework introduced here is expected to stimulate further investigations at the intersection of entropy production rate and gravitational wave strain research.",
+    "references": [
+      "[1] Williams, B. & Singh, P. Carbon 377, 8893 (2019). doi:10.xxxx/ref.2019.41961",
+      "[2] Tanaka, Y. & Park, J. Science Advances 279, 7282 (2025). doi:10.xxxx/ref.2025.74495",
+      "[3] Al-Rashid, A. et al. Biomacromolecules 323, 4070 (2023). doi:10.xxxx/ref.2023.79914",
+      "[4] Williams, B. & Singh, P. Nature Biotechnology 319, 7072 (2021). doi:10.xxxx/ref.2021.31819",
+      "[5] Chen, X. et al. Journal of Applied Physics 132, 7523 (2024). doi:10.xxxx/ref.2024.70732",
+      "[6] Tanaka, Y. & Park, J. Angewandte Chemie International Edition 356, 7524 (2019). doi:10.xxxx/ref.2019.89527",
+      "[7] Müller, R. & Nakamura, T. Journal of Materials Chemistry A 314, 6129 (2022). doi:10.xxxx/ref.2022.91249",
+      "[8] Williams, B. & Singh, P. Journal of the American Chemical Society 239, 8878 (2021). doi:10.xxxx/ref.2021.59148",
+      "[9] Williams, B. & Singh, P. Physical Review Letters 383, 5147 (2020). doi:10.xxxx/ref.2020.47799",
+      "[10] Kim, J. H. et al. Carbon 341, 9232 (2025). doi:10.xxxx/ref.2025.71386"
+    ],
+    "domains": [
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution"
+    ],
+    "tokenValue": 32,
+    "spinNumber": 56,
+    "generatedAt": "2026-03-13T11:12:28.221Z",
+    "searchEnriched": false
+  }
+}
