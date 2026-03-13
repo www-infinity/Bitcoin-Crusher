@@ -1,0 +1,31 @@
+{
+  "spinNumber": 14,
+  "timestamp": "2026-03-13T09:56:39.351Z",
+  "symbols": [
+    "₿",
+    "₿",
+    "🔥",
+    "💰",
+    "⭐"
+  ],
+  "symbolLabels": [
+    "BTC",
+    "BTC",
+    "FIRE",
+    "BAG",
+    "STAR"
+  ],
+  "symbolValues": [
+    3,
+    3,
+    3,
+    4,
+    2
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 30,
+  "totalScore": 574,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨"
+}
