@@ -329,6 +329,32 @@
   }
 
   /* ------------------------------------------------------------------
+     RECEIPT DOWNLOAD
+     Builds a receipt JSON (spin record + commit metadata) and triggers
+     a browser download so the user has a local copy of what was printed
+     into the repo.
+  ------------------------------------------------------------------ */
+  function downloadReceipt(spinData, commitInfo) {
+    const receipt = Object.assign({}, spinData, {
+      receipt: true,
+      commitFilename: commitInfo ? commitInfo.filename : null,
+      commitSha: commitInfo ? commitInfo.sha : null,
+      commitUrl: commitInfo ? commitInfo.url : null,
+    });
+    const blob = new Blob([JSON.stringify(receipt, null, 2) + "\n"], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const ts = new Date(spinData.timestamp).toISOString().replace(/[:.]/g, "-").slice(0, 19);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `receipt-spin-${ts}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 100);
+    log(`📥 Receipt downloaded: receipt-spin-${ts}.json`, "ok");
+  }
+
+  /* ------------------------------------------------------------------
      HISTORY RENDER
   ------------------------------------------------------------------ */
   function addHistoryItem(spinData, commitInfo) {
@@ -353,6 +379,13 @@
       <div class="hist-time">Spin #${spinData.spinNumber} · +${spinData.score} pts · ${new Date(spinData.timestamp).toLocaleTimeString()}</div>
       ${commitHtml}
     `;
+
+    // Download receipt button — added via JS to avoid inline handlers
+    const receiptBtn = document.createElement("button");
+    receiptBtn.className = "btn btn-xs btn-ghost hist-receipt-btn";
+    receiptBtn.textContent = "📥 Download Receipt";
+    receiptBtn.addEventListener("click", () => downloadReceipt(spinData, commitInfo));
+    item.appendChild(receiptBtn);
 
     if (historyEl.children.length === 0) {
       historyEl.appendChild(item);
@@ -432,6 +465,7 @@
       score: evalResult.score,
       totalScore,
       repo: cfg.owner && cfg.repo ? `${cfg.owner}/${cfg.repo}` : "unset",
+      deviceId: deviceId.join(" "),
     };
 
     log(`   Result: ${evalResult.label} (+${evalResult.score} pts, total: ${totalScore})`);
