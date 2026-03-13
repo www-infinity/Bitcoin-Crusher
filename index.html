@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitcoin Crusher — ∞ Infinity Slot Machine</title>
+  <meta name="description" content="Spin the Infinity Slot Machine. Every spin crushes Bitcoin and prints a new file to the repo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="topbar-icon">₿</span>
+      <div>
+        <div class="topbar-kicker">∞ Infinity System</div>
+        <div class="topbar-name">Bitcoin Crusher</div>
+      </div>
+    </div>
+    <a class="topbar-link" id="repoLink" href="https://github.com/www-infinity/Bitcoin-Crusher" target="_blank" rel="noreferrer">
+      🔗 View Repo
+    </a>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h1 class="hero-title">∞ Infinity Slot Machine</h1>
+      <p class="hero-sub">Spin the reels. Crush Bitcoin. Every spin prints a new record file into the repo forever.</p>
+    </section>
+
+    <!-- CONFIG PANEL -->
+    <section class="panel" id="cfgPanel">
+      <div class="panel-head">
+        <span class="panel-title">⚙️ Repo Config</span>
+        <span class="panel-hint">Set once — used for every spin commit</span>
+      </div>
+      <div class="panel-body">
+        <div class="form-grid">
+          <label class="form-label">Owner</label>
+          <input class="form-input" id="cfgOwner" placeholder="www-infinity" />
+
+          <label class="form-label">Repo</label>
+          <input class="form-input" id="cfgRepo" placeholder="Bitcoin-Crusher" />
+
+          <label class="form-label">Branch</label>
+          <input class="form-input" id="cfgBranch" placeholder="main" />
+
+          <label class="form-label">GitHub Token</label>
+          <input class="form-input" id="cfgToken" type="password" placeholder="Fine-grained PAT (Contents: read/write)" />
+        </div>
+        <div class="form-actions">
+          <button class="btn" id="btnSaveCfg">Save Config</button>
+          <button class="btn btn-ghost" id="btnLoadCfg">Load Saved</button>
+          <button class="btn btn-ghost" id="btnClearCfg">Clear</button>
+        </div>
+        <details class="security-note">
+          <summary>🔒 Security note</summary>
+          <ul>
+            <li>Your token is stored in <strong>session storage only</strong> — it clears when this tab closes.</li>
+            <li>Use a <strong>fine-grained PAT</strong> scoped to just this repo with <code>Contents: read/write</code>.</li>
+            <li>Without a token, spins are local only (no commit is made).</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- SLOT MACHINE -->
+    <section class="machine-wrap">
+      <div class="machine" id="machine">
+        <!-- Decorative top bar -->
+        <div class="machine-top">
+          <div class="machine-title-bar">
+            <span class="machine-jackpot-light" id="jLight1"></span>
+            <span class="machine-title-text">💎 BITCOIN CRUSHER 💎</span>
+            <span class="machine-jackpot-light" id="jLight2"></span>
+          </div>
+          <div class="machine-ticker" id="ticker">INFINITY SYSTEM ACTIVE — CRUSHING BITCOIN — ∞ ∞ ∞</div>
+        </div>
+
+        <!-- Reels -->
+        <div class="reels-outer">
+          <div class="reels-window">
+            <div class="reels" id="reels">
+              <div class="reel" id="reel0">
+                <div class="reel-strip" id="strip0"></div>
+              </div>
+              <div class="reel-separator"></div>
+              <div class="reel" id="reel1">
+                <div class="reel-strip" id="strip1"></div>
+              </div>
+              <div class="reel-separator"></div>
+              <div class="reel" id="reel2">
+                <div class="reel-strip" id="strip2"></div>
+              </div>
+              <div class="reel-separator"></div>
+              <div class="reel" id="reel3">
+                <div class="reel-strip" id="strip3"></div>
+              </div>
+              <div class="reel-separator"></div>
+              <div class="reel" id="reel4">
+                <div class="reel-strip" id="strip4"></div>
+              </div>
+            </div>
+            <div class="reels-shine" aria-hidden="true"></div>
+            <div class="reels-scanline" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Result display -->
+        <div class="result-bar" id="resultBar">
+          <span class="result-text" id="resultText">Pull the lever to spin!</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+          <div class="bet-area">
+            <label class="bet-label">SPINS</label>
+            <div class="spin-counter" id="spinCounter">0</div>
+          </div>
+          <button class="spin-btn" id="spinBtn" aria-label="Spin the slot machine">
+            <span class="spin-btn-icon">🎰</span>
+            <span class="spin-btn-label">SPIN &amp; CRUSH</span>
+          </button>
+          <div class="bet-area">
+            <label class="bet-label">SCORE</label>
+            <div class="spin-counter" id="scoreCounter">0</div>
+          </div>
+        </div>
+
+        <!-- Lever -->
+        <div class="lever-wrap" aria-hidden="true">
+          <div class="lever-track">
+            <div class="lever" id="lever">
+              <div class="lever-ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Win flash overlay -->
+      <div class="win-overlay" id="winOverlay" aria-live="assertive" aria-atomic="true"></div>
+    </section>
+
+    <!-- CONSOLE / LOG -->
+    <section class="panel">
+      <div class="panel-head">
+        <span class="panel-title">🛰️ Infinity Console</span>
+        <button class="btn btn-xs btn-ghost" id="clearLog">Clear</button>
+      </div>
+      <pre class="console-log" id="consoleLog">System ready. Configure repo + token, then SPIN.\n</pre>
+    </section>
+
+    <!-- HISTORY -->
+    <section class="panel">
+      <div class="panel-head">
+        <span class="panel-title">📜 Spin History (this session)</span>
+        <span class="panel-hint" id="histCount">0 spins</span>
+      </div>
+      <div class="history" id="history"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>∞ Bitcoin Crusher — Infinity System</span>
+    <span>🧱 Every spin is a record. Every record is forever.</span>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
