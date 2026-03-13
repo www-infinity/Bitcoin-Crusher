@@ -200,10 +200,14 @@
 
     const ts = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
     const filename = `spins/spin-${ts}.json`;
+    if (!/^spins\/spin-[\dT-]+\.json$/.test(filename)) {
+      log("❌ Invalid spin filename — aborting commit.", "err");
+      return null;
+    }
     const content = JSON.stringify(spinData, null, 2);
     const base64Content = btoa(new TextEncoder().encode(content).reduce((data, byte) => data + String.fromCharCode(byte), ""));
 
-    const url = `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(filename)}`;
+    const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filename.split("/").map(encodeURIComponent).join("/")}`;
 
     const body = {
       message: `🎰 Spin #${spinData.spinNumber}: ${spinData.result} [${spinData.symbols.join(" ")}]`,
