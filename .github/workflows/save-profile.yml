@@ -1,0 +1,64 @@
+name: Save User Profile
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile_data:
+        description: 'JSON profile data (encrypted)'
+        required: true
+        type: string
+      username:
+        description: 'Username (alphanumeric, underscore, hyphen only, max 32 chars)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Validate username
+        env:
+          USERNAME: ${{ inputs.username }}
+        run: |
+          if ! echo "$USERNAME" | grep -qE '^[a-zA-Z0-9_-]{2,32}$'; then
+            echo "❌ Invalid username: $USERNAME"
+            exit 1
+          fi
+
+      - name: Write profile file and commit
+        env:
+          PROFILE_DATA: ${{ inputs.profile_data }}
+          USERNAME: ${{ inputs.username }}
+        run: |
+          mkdir -p profiles
+          node -e "
+            const path = require('path');
+            const fs = require('fs');
+            const username = process.env.USERNAME;
+            const filename = 'profiles/' + username + '.json';
+            const resolved = path.resolve(filename);
+            const profilesDir = path.resolve('profiles');
+            if (!resolved.startsWith(profilesDir + path.sep)) {
+              console.error('Path traversal detected: ' + filename);
+              process.exit(1);
+            }
+            // Validate that profile_data is valid JSON before writing
+            try { JSON.parse(process.env.PROFILE_DATA); } catch(e) {
+              console.error('Invalid JSON in profile_data');
+              process.exit(1);
+            }
+            fs.writeFileSync(resolved, process.env.PROFILE_DATA + '\n');
+          "
+          git config user.name 'www-Infinity'
+          git config user.email 'tigerbalm7623@gmail.com'
+          git add "profiles/$USERNAME.json"
+          git commit -m "👤 Profile update: $USERNAME" || echo "No changes to commit"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

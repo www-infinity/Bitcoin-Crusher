@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bitcoin Crusher — ∞ Infinity Slot Machine</title>
-  <meta name="description" content="Spin the Infinity Slot Machine. Every spin crushes Bitcoin and prints a new file to the repo." />
+  <meta name="description" content="Spin the Infinity Slot Machine. Every spin generates a unique research token and crushes Bitcoin forever." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
@@ -19,55 +19,134 @@
     <div class="bg-glow bg-glow-3"></div>
   </div>
 
-  <header class="topbar">
-    <div class="topbar-brand">
-      <span class="topbar-icon">₿</span>
-      <div>
-        <div class="topbar-kicker">∞ Infinity System</div>
-        <div class="topbar-name">Bitcoin Crusher</div>
+  <!-- ===== HAMBURGER DRAWER ===== -->
+  <div class="ham-overlay" id="hamOverlay"></div>
+  <nav class="ham-drawer" id="hamDrawer" aria-label="Navigation" aria-hidden="true">
+    <div class="ham-head">
+      <span class="ham-brand">∞ Infinity System</span>
+      <button class="ham-close" id="hamClose" aria-label="Close menu">✕</button>
+    </div>
+    <div class="ham-section-label">🪙 Bitcoin Crusher</div>
+    <a class="ham-link" href="https://www-infinity.github.io/Bitcoin-Crusher/" target="_blank" rel="noopener noreferrer">🎰 Slot Machine</a>
+    <a class="ham-link" href="https://github.com/www-infinity/Bitcoin-Crusher" target="_blank" rel="noopener noreferrer">📁 GitHub Repo</a>
+    <div class="ham-divider"></div>
+    <div class="ham-section-label">🌐 www-Infinity Projects</div>
+    <a class="ham-link" href="https://github.com/www-infinity" target="_blank" rel="noopener noreferrer">🚀 GitHub Profile</a>
+    <a class="ham-link" href="https://archive.org/search?query=bitcoin+crusher+infinity" target="_blank" rel="noopener noreferrer">🗄️ Archive.org Search</a>
+    <div class="ham-divider"></div>
+    <div class="ham-section-label">🔬 Research Tools</div>
+    <a class="ham-link" href="https://duckduckgo.com/?q=quantum+computing+research" target="_blank" rel="noopener noreferrer">🦆 DuckDuckGo Science</a>
+    <a class="ham-link" href="https://arxiv.org" target="_blank" rel="noopener noreferrer">📄 arXiv Papers</a>
+    <a class="ham-link" href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">🎓 Google Scholar</a>
+    <div class="ham-divider"></div>
+    <div class="ham-section-label">🎮 Games</div>
+    <a class="ham-link ham-coming-soon" href="#" aria-disabled="true">🎯 Mini-Games (coming soon)</a>
+    <a class="ham-link ham-coming-soon" href="#" aria-disabled="true">📺 Video Gallery (coming soon)</a>
+    <div class="ham-divider"></div>
+    <div class="ham-footer">∞ Bitcoin Crusher v2.0</div>
+  </nav>
+
+  <!-- ===== LOGIN MODAL ===== -->
+  <div class="modal-overlay" id="loginOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle">
+    <div class="modal" id="loginModal">
+      <div class="modal-head">
+        <span class="modal-title" id="loginModalTitle">🔐 Account</span>
+        <button class="modal-close" id="loginClose" aria-label="Close login modal">✕</button>
       </div>
+      <!-- Tabs -->
+      <div class="modal-tabs">
+        <button class="modal-tab active" id="tabLogin" data-tab="login">Sign In</button>
+        <button class="modal-tab" id="tabRegister" data-tab="register">Sign Up</button>
+      </div>
+      <!-- Login form -->
+      <div class="modal-body" id="loginForm">
+        <div class="form-grid">
+          <label class="form-label">Username / Email</label>
+          <input class="form-input" id="loginUser" type="text" autocomplete="username" placeholder="Kris or email" />
+          <label class="form-label">Password</label>
+          <input class="form-input" id="loginPass" type="password" autocomplete="current-password" placeholder="••••••••" />
+        </div>
+        <div class="form-actions">
+          <button class="btn" id="btnLogin">Sign In</button>
+        </div>
+        <div class="auth-msg" id="loginMsg"></div>
+      </div>
+      <!-- Register form -->
+      <div class="modal-body" id="registerForm" style="display:none">
+        <div class="form-grid">
+          <label class="form-label">Username</label>
+          <input class="form-input" id="regUser" type="text" autocomplete="username" placeholder="YourName" />
+          <label class="form-label">Email</label>
+          <input class="form-input" id="regEmail" type="email" autocomplete="email" placeholder="you@example.com" />
+          <label class="form-label">Password</label>
+          <input class="form-input" id="regPass" type="password" autocomplete="new-password" placeholder="min 4 chars" />
+        </div>
+        <div class="form-actions">
+          <button class="btn" id="btnRegister">Create Account</button>
+        </div>
+        <div class="auth-msg" id="registerMsg"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RESEARCH VIEWER MODAL ===== -->
+  <div class="modal-overlay research-overlay" id="researchOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="researchModalTitle">
+    <div class="modal research-modal" id="researchModal">
+      <div class="modal-head">
+        <span class="modal-title" id="researchModalTitle">🔬 Research Token</span>
+        <button class="modal-close" id="researchClose" aria-label="Close research viewer">✕</button>
+      </div>
+      <div class="modal-body research-body" id="researchModalBody">
+        <!-- filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOPBAR ===== -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="ham-btn" id="hamBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="hamDrawer">
+        <span class="ham-icon">☰</span>
+      </button>
+      <div class="topbar-brand">
+        <span class="topbar-icon">₿</span>
+        <div>
+          <div class="topbar-kicker">∞ Infinity System</div>
+          <div class="topbar-name">Bitcoin Crusher</div>
+        </div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="user-badge" id="userBadge" style="display:none">
+        <span class="user-badge-name" id="userBadgeName"></span>
+        <span class="user-badge-role" id="userBadgeRole"></span>
+        <button class="btn btn-xs btn-ghost" id="logoutBtn">Sign Out</button>
+      </div>
+      <button class="btn btn-xs" id="loginBtn">🔐 Sign In</button>
     </div>
   </header>
 
   <main class="main">
     <section class="hero">
       <h1 class="hero-title">∞ Infinity Slot Machine</h1>
-      <p class="hero-sub">Spin the reels. Crush Bitcoin. Every spin prints a new record file into the repo forever.</p>
-    </section>
-
-    <!-- CONFIG PANEL -->
-    <section class="panel" id="cfgPanel">
-      <div class="panel-head">
-        <span class="panel-title">⚙️ Repo Config</span>
-        <span class="panel-hint">Set once — used for every spin commit</span>
-      </div>
-      <div class="panel-body">
-        <div class="form-grid">
-          <label class="form-label">Owner</label>
-          <input class="form-input" id="cfgOwner" placeholder="www-infinity" />
-
-          <label class="form-label">Repo</label>
-          <input class="form-input" id="cfgRepo" placeholder="Bitcoin-Crusher" />
-
-          <label class="form-label">Branch</label>
-          <input class="form-input" id="cfgBranch" placeholder="main" />
-
-        </div>
-        <div class="form-actions">
-          <button class="btn" id="btnSaveCfg">Save Config</button>
-          <button class="btn btn-ghost" id="btnLoadCfg">Load Saved</button>
-          <button class="btn btn-ghost" id="btnClearCfg">Clear</button>
-        </div>
-        <div class="repo-link-row" id="repoLinkRow" style="display:none">
-          <a class="repo-link" id="repoLink" href="#" target="_blank" rel="noopener noreferrer">🔗 Open repo on GitHub</a>
-        </div>
+      <p class="hero-sub">Spin the reels. Crush Bitcoin. Every spin generates a unique scientific research token committed forever to the repo.</p>
+      <!-- Token flow visual -->
+      <div class="token-flow" aria-hidden="true">
+        <span class="tf-step">🟡 Spin</span>
+        <span class="tf-arrow">→</span>
+        <span class="tf-step">👑 Token</span>
+        <span class="tf-arrow">→</span>
+        <span class="tf-step">🔬 Research</span>
+        <span class="tf-arrow">→</span>
+        <span class="tf-step">🦾 Commit</span>
+        <span class="tf-arrow">→</span>
+        <span class="tf-step">💰 Value</span>
       </div>
     </section>
 
     <!-- SLOT MACHINE -->
     <section class="machine-wrap">
       <div class="machine" id="machine">
-        <!-- Decorative top bar -->
         <div class="machine-top">
           <div class="machine-title-bar">
             <span class="machine-jackpot-light" id="jLight1"></span>
@@ -81,25 +160,15 @@
         <div class="reels-outer">
           <div class="reels-window">
             <div class="reels" id="reels">
-              <div class="reel" id="reel0">
-                <div class="reel-strip" id="strip0"></div>
-              </div>
+              <div class="reel" id="reel0"><div class="reel-strip" id="strip0"></div></div>
               <div class="reel-separator"></div>
-              <div class="reel" id="reel1">
-                <div class="reel-strip" id="strip1"></div>
-              </div>
+              <div class="reel" id="reel1"><div class="reel-strip" id="strip1"></div></div>
               <div class="reel-separator"></div>
-              <div class="reel" id="reel2">
-                <div class="reel-strip" id="strip2"></div>
-              </div>
+              <div class="reel" id="reel2"><div class="reel-strip" id="strip2"></div></div>
               <div class="reel-separator"></div>
-              <div class="reel" id="reel3">
-                <div class="reel-strip" id="strip3"></div>
-              </div>
+              <div class="reel" id="reel3"><div class="reel-strip" id="strip3"></div></div>
               <div class="reel-separator"></div>
-              <div class="reel" id="reel4">
-                <div class="reel-strip" id="strip4"></div>
-              </div>
+              <div class="reel" id="reel4"><div class="reel-strip" id="strip4"></div></div>
             </div>
             <div class="reels-shine" aria-hidden="true"></div>
             <div class="reels-scanline" aria-hidden="true"></div>
@@ -141,20 +210,56 @@
       <div class="win-overlay" id="winOverlay" aria-live="assertive" aria-atomic="true"></div>
     </section>
 
+    <!-- ===== LATEST RESEARCH TOKEN ===== -->
+    <section class="panel" id="researchPanel" style="display:none">
+      <div class="panel-head">
+        <span class="panel-title">🔬 Latest Research Token</span>
+        <div class="panel-head-actions">
+          <span class="panel-hint" id="researchPanelMeta"></span>
+          <button class="btn btn-xs" id="viewResearchBtn">📄 Full Article</button>
+        </div>
+      </div>
+      <div class="panel-body research-preview" id="researchPreview">
+        <!-- filled after each spin -->
+      </div>
+    </section>
+
+    <!-- ===== AI RESEARCH CHAT ===== -->
+    <section class="panel" id="chatPanel">
+      <div class="panel-head">
+        <span class="panel-title">🤖 Research AI Chat</span>
+        <span class="panel-hint">DuckDuckGo · Archive.org · Science</span>
+      </div>
+      <div class="panel-body">
+        <div class="chat-log" id="chatLog" aria-live="polite" aria-label="Chat messages">
+          <div class="chat-msg ai"><span class="chat-avatar">🤖</span><span class="chat-bubble">Hello! I am the Infinity Research AI. Ask me about science, cryptography, materials, quantum physics, or anything else. I will search and synthesise research for you.</span></div>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" class="form-input chat-input" id="chatInput"
+            placeholder="Ask about quantum computing, blockchain, biology…"
+            aria-label="Chat message input" />
+          <button class="btn chat-send-btn" id="chatSendBtn" aria-label="Send message">↑ Send</button>
+        </div>
+      </div>
+    </section>
+
     <!-- CONSOLE / LOG -->
     <section class="panel">
       <div class="panel-head">
         <span class="panel-title">🛰️ Infinity Console</span>
         <button class="btn btn-xs btn-ghost" id="clearLog">Clear</button>
       </div>
-      <pre class="console-log" id="consoleLog">System ready. Configure repo + token, then SPIN.\n</pre>
+      <pre class="console-log" id="consoleLog">System ready. Sign in and SPIN.\n</pre>
     </section>
 
-    <!-- HISTORY -->
+    <!-- HISTORY + EXPORT -->
     <section class="panel">
       <div class="panel-head">
         <span class="panel-title">📜 Spin History (this session)</span>
-        <span class="panel-hint" id="histCount">0 spins</span>
+        <div class="panel-head-actions">
+          <button class="btn btn-xs" id="exportAllBtn" title="Export all spins + research as HTML report">📦 Export All</button>
+          <span class="panel-hint" id="histCount">0 spins</span>
+        </div>
       </div>
       <div class="history" id="history"></div>
     </section>
@@ -181,7 +286,7 @@
     <section class="panel" id="aiPanel">
       <div class="panel-head">
         <span class="panel-title">🤖 AI Signal Analysis</span>
-        <span class="panel-hint">Pattern recognition · no external dependencies</span>
+        <span class="panel-hint">Pattern recognition · on-device</span>
       </div>
       <div class="panel-body">
         <div class="ai-status" id="aiStatus">
@@ -192,6 +297,33 @@
         <div class="ai-prediction" id="aiPrediction"></div>
       </div>
     </section>
+
+    <!-- ADMIN PANEL (hidden; admin only) -->
+    <section class="panel admin-panel" id="adminPanel" style="display:none">
+      <div class="panel-head">
+        <span class="panel-title">⚙️ Admin — Repo Config</span>
+        <span class="panel-hint">Admin only · stored in browser</span>
+      </div>
+      <div class="panel-body">
+        <div class="form-grid">
+          <label class="form-label">Owner</label>
+          <input class="form-input" id="cfgOwner" placeholder="www-infinity" />
+          <label class="form-label">Repo</label>
+          <input class="form-input" id="cfgRepo" placeholder="Bitcoin-Crusher" />
+          <label class="form-label">Branch</label>
+          <input class="form-input" id="cfgBranch" placeholder="main" />
+        </div>
+        <div class="form-actions">
+          <button class="btn" id="btnSaveCfg">Save Config</button>
+          <button class="btn btn-ghost" id="btnLoadCfg">Load Saved</button>
+          <button class="btn btn-ghost" id="btnClearCfg">Clear</button>
+        </div>
+        <div class="repo-link-row" id="repoLinkRow" style="display:none">
+          <a class="repo-link" id="repoLink" href="#" target="_blank" rel="noopener noreferrer">🔗 Open repo on GitHub</a>
+        </div>
+        <div id="adminUserList" style="margin-top:16px"></div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -200,6 +332,8 @@
   </footer>
 
   <script src="assets/cfg.js"></script>
+  <script src="assets/research.js"></script>
+  <script src="assets/auth.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
