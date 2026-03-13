@@ -187,7 +187,12 @@
   }
 
   /* ------------------------------------------------------------------
-     GITHUB API — COMMIT FILE
+     GITHUB API — COMMIT FILE (via Actions workflow_dispatch)
+     Uses save-spin.yml which commits with GITHUB_TOKEN (contents:write).
+     Requires the GHP token to have actions:write (fine-grained PAT) or
+     repo scope (classic PAT) — avoids the need for contents:write on
+     the PAT itself, fixing 403 "Resource not accessible by personal
+     access token" errors.
   ------------------------------------------------------------------ */
   async function commitSpinRecord(spinData) {
     const token = getAuthToken();
@@ -205,20 +210,22 @@
       return null;
     }
     const content = JSON.stringify(spinData, null, 2);
-    const base64Content = btoa(new TextEncoder().encode(content).reduce((data, byte) => data + String.fromCharCode(byte), ""));
 
-    const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filename.split("/").map(encodeURIComponent).join("/")}`;
+    // Trigger the save-spin workflow which commits using GITHUB_TOKEN
+    const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/save-spin.yml/dispatches`;
 
     const body = {
-      message: `🎰 Spin #${spinData.spinNumber}: ${spinData.result} [${spinData.symbols.join(" ")}]`,
-      content: base64Content,
-      branch: branch || "main",
+      ref: branch || "main",
+      inputs: {
+        spin_data: content,
+        filename: filename,
+      },
     };
 
     try {
       log(`📡 Committing → ${filename}`, "");
       const res = await fetch(url, {
-        method: "PUT",
+        method: "POST",
         headers: {
           Accept: "application/vnd.github+json",
           Authorization: `Bearer ${token}`,
@@ -234,11 +241,9 @@
         return null;
       }
 
-      const data = await res.json();
-      const commitSha = data.commit?.sha?.slice(0, 7) || "?";
-      const commitUrl = data.commit?.html_url || "#";
-      log(`✅ Committed! SHA: ${commitSha}  →  ${filename}`, "ok");
-      return { sha: commitSha, url: commitUrl, filename };
+      // workflow_dispatch returns 204 No Content on success (no SHA yet)
+      log(`✅ Spin queued for commit → ${filename}`, "ok");
+      return { sha: null, url: `https://github.com/${owner}/${repo}/actions`, filename };
     } catch (e) {
       log(`❌ Network error: ${e.message}`, "err");
       return null;
@@ -308,7 +313,9 @@
 
     const resultClass = isJackpot ? "jackpot" : isWin ? "win" : "";
     const commitHtml = commitInfo
-      ? `<div class="hist-commit">📝 <a href="${escHtml(commitInfo.url)}" target="_blank" rel="noreferrer">${escHtml(commitInfo.sha)}</a> — ${escHtml(commitInfo.filename)}</div>`
+      ? commitInfo.sha
+        ? `<div class="hist-commit">📝 <a href="${escHtml(commitInfo.url)}" target="_blank" rel="noreferrer">${escHtml(commitInfo.sha)}</a> — ${escHtml(commitInfo.filename)}</div>`
+        : `<div class="hist-commit">📡 <a href="${escHtml(commitInfo.url)}" target="_blank" rel="noreferrer">queued</a> — ${escHtml(commitInfo.filename)}</div>`
       : `<div class="hist-commit" style="color:var(--muted2)">⚡ local only</div>`;
 
     item.innerHTML = `
@@ -537,9 +544,9 @@
     wireEvents();
     log("🧱 Bitcoin Crusher — Infinity Slot Machine ready.");
     if (window.BITCOIN_CRUSHER_TOKEN && cfg.owner && cfg.repo) {
-      log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — GHP secret active, every spin will commit.`, "ok");
+      log(`✅ Repo: ${cfg.owner}/${cfg.repo} (branch: ${cfg.branch}) — GHP secret active, every spin will be committed via Actions.`, "ok");
     } else if (window.BITCOIN_CRUSHER_TOKEN) {
-      log("✅ GHP secret active — set Owner/Repo above and save to enable auto-commit on each spin.", "ok");
+      log("✅ GHP secret active — set Owner/Repo above and save to enable auto-commit via Actions on each spin.", "ok");
     } else {
       log("⚠️  GHP secret not found — spins are local only (no commit will be made).", "warn");
     }
