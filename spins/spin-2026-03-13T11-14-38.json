@@ -1,0 +1,87 @@
+{
+  "spinNumber": 62,
+  "timestamp": "2026-03-13T11:14:38.433Z",
+  "symbols": [
+    "👑",
+    "🍄",
+    "⭐",
+    "💰",
+    "🍄"
+  ],
+  "symbolLabels": [
+    "CROWN",
+    "MARIO",
+    "STAR",
+    "BAG",
+    "MARIO"
+  ],
+  "symbolValues": [
+    7,
+    6,
+    2,
+    4,
+    6
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 50,
+  "totalScore": 1864,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Synergistic MRNA polyadenylation and Pro-drug activation in Magnetically confined Ergot alkaloid Matrices",
+    "authors": [
+      "Prof. Satoshi Nakamura",
+      "Dr. Priya Krishnamurthy"
+    ],
+    "journal": "ACS Nano",
+    "year": 2026,
+    "doi": "10.1038/acsnano.2026.81901",
+    "impactFactor": 18.5,
+    "keywords": [
+      "surface reconstruction pattern",
+      "overpotential barrier",
+      "bioavailability coefficient",
+      "plasma confinement time",
+      "biochemistry",
+      "metallurgy",
+      "molecular biology"
+    ],
+    "abstract": "We report amphiphilic properties of surface adsorption energy in metallurgy. The redox-active nature of the observed magnetic reconnection event was confirmed through high-resolution fluorescence resonance energy transfer analysis and first-principles calculations. These findings open new avenues for the rational design of refractory hydrogen-burning shell-based architectures.",
+    "introduction": "The field of metallurgy has witnessed remarkable advances, driven by demand for label-free systems with unprecedented phosphorylation cascade capabilities [1,2]. Central to these developments is the ability to precisely control membrane curvature elasticity at the high-entropy level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between Faradaic efficiency and post-translational modification site has emerged as a critical factor governing macroscopic ductile behaviour [6]. Despite significant progress, the mechanistic origin of light-weight allosteric regulatory site phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining Hall–Petch relationship spectroscopy, computational modelling, and refractory characterisation.",
+    "methods": "All samples were prepared using a convective Schwarzschild radius synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed surface reconstruction pattern analysis with a spatial resolution of 0.34 nm. Label-free measurements were conducted between 4 K and 873 K using a custom-built Auger electron spectrum apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 626 eV. Statistical analysis applied a bootstrapping methodology (n = 285 iterations) at significance threshold p < 0.05.",
+    "results": "The hydrophilic single-molecule trajectory exhibited a well-defined corrosion-resistant signature consistent with theoretical predictions. Quantitative analysis revealed a viscoelastic dependence with R² = 0.958. The enthalpic regime showed a 36.6-fold enhancement in post-translational modification site performance relative to the control. Cross-validation using independent surface reconstruction pattern measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of glycosylated surface adsorption energy at the critical threshold was accompanied by a characteristic surface reconstruction pattern shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed hydrophobic behaviour can be rationalised within a framework accounting for plasma beta parameter-mediated coupling between endophytic domains. Our findings align with recent reports on analogous metallurgy systems while extending understanding to the previously unexplored redox-active regime [9,10]. The 72.1% enhancement in stellar opacity coefficient substantially exceeds state-of-the-art benchmarks, suggesting convective Auger electron spectrum as a genuinely superior platform. From a practical standpoint, our supermassive fabrication route is scalable and compatible with existing electrolyte conductivity-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component entropic systems.",
+    "conclusion": "We demonstrated redox-active adenosine triphosphate hydrolysis in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation hydrophilic wood-decay enzyme-based technologies. The orally active framework introduced here is expected to stimulate further investigations at the intersection of creep rupture life and contact angle hysteresis research.",
+    "references": [
+      "[1] Tanaka, Y. & Park, J. Angewandte Chemie International Edition 165, 6965 (2019). doi:10.xxxx/ref.2019.03681",
+      "[2] Zhang, Y. et al. ACS Catalysis 465, 2391 (2023). doi:10.xxxx/ref.2023.27843",
+      "[3] Tanaka, Y. & Park, J. Physical Review Letters 284, 6380 (2021). doi:10.xxxx/ref.2021.91288",
+      "[4] Patel, A. et al. Nature Nanotechnology 225, 2491 (2022). doi:10.xxxx/ref.2022.14282",
+      "[5] Patel, A. et al. Proceedings of the National Academy of Sciences 221, 1227 (2019). doi:10.xxxx/ref.2019.47468",
+      "[6] Al-Rashid, A. et al. IEEE Transactions on Quantum Engineering 210, 5140 (2022). doi:10.xxxx/ref.2022.14655",
+      "[7] Chen, X. et al. Nature Biotechnology 140, 1644 (2023). doi:10.xxxx/ref.2023.11393",
+      "[8] Al-Rashid, A. et al. Proceedings of the National Academy of Sciences 241, 7377 (2024). doi:10.xxxx/ref.2024.78274",
+      "[9] Volkov, A. K. et al. Computational Materials Science 172, 6574 (2022). doi:10.xxxx/ref.2022.41452",
+      "[10] Patel, A. et al. Journal of the American Chemical Society 227, 5214 (2021). doi:10.xxxx/ref.2021.39627"
+    ],
+    "domains": [
+      "metallurgy",
+      "electrochemistry",
+      "surface_science",
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "biophysics",
+      "molecular_biology",
+      "proteomics"
+    ],
+    "tokenValue": 50,
+    "spinNumber": 62,
+    "generatedAt": "2026-03-13T11:14:38.597Z",
+    "searchEnriched": false
+  }
+}
