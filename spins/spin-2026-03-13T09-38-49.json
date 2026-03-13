@@ -1,0 +1,31 @@
+{
+  "spinNumber": 3,
+  "timestamp": "2026-03-13T09:38:49.162Z",
+  "symbols": [
+    "🔥",
+    "₿",
+    "🔥",
+    "🥇",
+    "🔥"
+  ],
+  "symbolLabels": [
+    "FIRE",
+    "BTC",
+    "FIRE",
+    "GOLD",
+    "FIRE"
+  ],
+  "symbolValues": [
+    3,
+    3,
+    3,
+    10,
+    3
+  ],
+  "result": "⭐ BIG WIN — 3 of a kind!",
+  "tier": "win-medium",
+  "score": 110,
+  "totalScore": 190,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨"
+}
