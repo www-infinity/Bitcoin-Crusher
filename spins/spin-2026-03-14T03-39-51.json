@@ -1,0 +1,87 @@
+{
+  "spinNumber": 26,
+  "timestamp": "2026-03-14T03:39:50.869Z",
+  "symbols": [
+    "🔥",
+    "🌕",
+    "🧱",
+    "🌕",
+    "∞"
+  ],
+  "symbolLabels": [
+    "FIRE",
+    "MOON",
+    "BLOCK",
+    "MOON",
+    "INF"
+  ],
+  "symbolValues": [
+    3,
+    6,
+    4,
+    6,
+    8
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 54,
+  "totalScore": 760,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Surface-enhanced Radius of gyration via Space weathering rind: Implications for combustion chemistry",
+    "authors": [
+      "Dr. Elena V. Sokolov",
+      "Prof. James K. Takahashi"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "year": 2026,
+    "doi": "10.1038/prl.2026.47132",
+    "impactFactor": 18.5,
+    "keywords": [
+      "Gibbs free energy landscape",
+      "charge density wave order parameter",
+      "Seebeck coefficient",
+      "plasma oscillation frequency",
+      "combustion chemistry",
+      "tidal mechanics",
+      "information theory"
+    ],
+    "abstract": "We report diffusion properties of Shannon entropy rate in combustion chemistry. Specifically, we find that rich core differentiation enhances performance by up to 215.7% relative to conventional approaches. The conjugated nature of the observed orbital resonance lock was confirmed through high-resolution Shannon entropy rate analysis and first-principles calculations.",
+    "introduction": "The field of combustion chemistry has witnessed remarkable advances, driven by demand for thermoresponsive systems with unprecedented electron cyclotron resonance capabilities [1,2]. Central to these developments is the ability to precisely control ilmenite abundance at the amphiphilic level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between minimum description length and density of states at Fermi energy has emerged as a critical factor governing macroscopic gardened behaviour [6]. Despite significant progress, the mechanistic origin of symplectic impact melt glass phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining Fisher information matrix spectroscopy, computational modelling, and supercritical characterisation.",
+    "methods": "All samples were prepared using a sparse lunar mantle convection synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed ilmenite abundance analysis with a spatial resolution of 0.22 nm. Self-assembled measurements were conducted between 4 K and 873 K using a custom-built orbital resonance lock apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 534 eV. Statistical analysis applied a bootstrapping methodology (n = 686 iterations) at significance threshold p < 0.05.",
+    "results": "The hyperbranched Debye shielding length exhibited a well-defined quasi-static signature consistent with theoretical predictions. Quantitative analysis revealed a magnetised dependence with R² = 0.919. The oblique regime showed a 45.8-fold enhancement in rate-distortion function performance relative to the control. Cross-validation using independent knot polynomial measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of insulating glass transition temperature at the critical threshold was accompanied by a characteristic quantum dot photoluminescence shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed differentiated behaviour can be rationalised within a framework accounting for lunar mantle convection-mediated coupling between equatorial domains. Our findings align with recent reports on analogous combustion chemistry systems while extending understanding to the previously unexplored stoichiometric regime [9,10]. The 225.6% enhancement in mare basalt stratigraphy substantially exceeds state-of-the-art benchmarks, suggesting ergodic core-shell morphology as a genuinely superior platform. From a practical standpoint, our non-equilibrium fabrication route is scalable and compatible with existing tidal dissipation rate-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component nanoscale systems.",
+    "conclusion": "We demonstrated anorthositic core-shell morphology in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation equatorial ilmenite abundance-based technologies. The irreversible framework introduced here is expected to stimulate further investigations at the intersection of spectral graph eigenvalue and flame temperature research.",
+    "references": [
+      "[1] Kim, J. H. et al. Computational Materials Science 401, 1177 (2025). doi:10.xxxx/ref.2025.41423",
+      "[2] Kim, J. H. et al. Quantum Science and Technology 386, 7430 (2023). doi:10.xxxx/ref.2023.21735",
+      "[3] Zhang, Y. et al. npj Computational Materials 305, 7964 (2023). doi:10.xxxx/ref.2023.28869",
+      "[4] Chen, X. et al. ACS Nano 147, 1921 (2022). doi:10.xxxx/ref.2022.97265",
+      "[5] Tanaka, Y. & Park, J. Journal of Applied Physics 424, 1172 (2023). doi:10.xxxx/ref.2023.02013",
+      "[6] Williams, B. & Singh, P. Angewandte Chemie International Edition 479, 8493 (2022). doi:10.xxxx/ref.2022.47772",
+      "[7] Müller, R. & Nakamura, T. Advanced Functional Materials 352, 6386 (2025). doi:10.xxxx/ref.2025.06620",
+      "[8] Patel, A. et al. Advanced Functional Materials 187, 6699 (2019). doi:10.xxxx/ref.2019.01208",
+      "[9] Volkov, A. K. et al. Journal of the American Chemical Society 346, 9117 (2023). doi:10.xxxx/ref.2023.25624",
+      "[10] Kim, J. H. et al. Nanoscale 108, 2094 (2023). doi:10.xxxx/ref.2023.89283"
+    ],
+    "domains": [
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "selenology",
+      "tidal_mechanics",
+      "planetary_science",
+      "solid_state_physics",
+      "polymer_chemistry",
+      "nanotechnology",
+      "mathematics",
+      "topology",
+      "information_theory"
+    ],
+    "tokenValue": 54,
+    "spinNumber": 26,
+    "generatedAt": "2026-03-14T03:39:50.969Z",
+    "searchEnriched": false
+  }
+}
