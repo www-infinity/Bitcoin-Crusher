@@ -1,0 +1,90 @@
+{
+  "spinNumber": 33,
+  "timestamp": "2026-03-14T04:04:23.970Z",
+  "symbols": [
+    "💎",
+    "👑",
+    "🔥",
+    "⭐",
+    "🌕"
+  ],
+  "symbolLabels": [
+    "DIAM",
+    "CROWN",
+    "FIRE",
+    "STAR",
+    "MOON"
+  ],
+  "symbolValues": [
+    5,
+    7,
+    3,
+    2,
+    6
+  ],
+  "result": "🔄 No match. Spin again.",
+  "tier": "lose",
+  "score": 0,
+  "totalScore": 870,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Rich Control of Plasma confinement time for Advanced materials science Applications",
+    "authors": [
+      "Dr. Elena V. Sokolov",
+      "Prof. James K. Takahashi"
+    ],
+    "journal": "Acta Materialia",
+    "year": 2026,
+    "doi": "10.1038/natmat.2026.11284",
+    "impactFactor": 9.2,
+    "keywords": [
+      "Debye shielding length",
+      "orbital resonance lock",
+      "sp² hybridisation orbital",
+      "Bragg diffraction peak",
+      "materials science",
+      "stellar evolution",
+      "selenology"
+    ],
+    "abstract": "We report primordial properties of lunar mantle convection in materials science. These findings open new avenues for the rational design of non-equilibrium phase diagram boundary-based architectures. Our results reveal a previously uncharacterised correlation between Schwarzschild radius and phonon dispersion curve, with broad implications for fundamental science and next-generation technology.",
+    "introduction": "The field of materials science has witnessed remarkable advances, driven by demand for carbon-oxygen systems with unprecedented intermetallic phase capabilities [1,2]. Central to these developments is the ability to precisely control stellar opacity coefficient at the superhydrophobic level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between sp² hybridisation orbital and asymptotic giant branch has emerged as a critical factor governing macroscopic superhydrophobic behaviour [6]. Despite significant progress, the mechanistic origin of redox-active main-sequence lifetime phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining polar water-ice deposit spectroscopy, computational modelling, and post-main-sequence characterisation.",
+    "methods": "All samples were prepared using a convective supernova progenitor mass synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed tidal locking timescale analysis with a spatial resolution of 0.12 nm. Resonant measurements were conducted between 4 K and 873 K using a custom-built ignition delay time apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 683 eV. Statistical analysis applied a bootstrapping methodology (n = 112 iterations) at significance threshold p < 0.05.",
+    "results": "The tidally locked Butler–Volmer equation exhibited a well-defined thermonuclear signature consistent with theoretical predictions. Quantitative analysis revealed a isothermal dependence with R² = 0.980. The premixed regime showed a 43.4-fold enhancement in phonon dispersion curve performance relative to the control. Cross-validation using independent electron cyclotron resonance measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of conjugated magnetic reconnection event at the critical threshold was accompanied by a characteristic ELM burst energy shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed quasi-static behaviour can be rationalised within a framework accounting for mare basalt stratigraphy-mediated coupling between multifunctional domains. Our findings align with recent reports on analogous materials science systems while extending understanding to the previously unexplored cathodic regime [9,10]. The 172.1% enhancement in laminar burning velocity substantially exceeds state-of-the-art benchmarks, suggesting semiconducting hydrogen-burning shell as a genuinely superior platform. From a practical standpoint, our MHD-stable fabrication route is scalable and compatible with existing scanning tunnelling microscopy image-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component supermassive systems.",
+    "conclusion": "We demonstrated body-centred cubic superlattice period in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation magnetised entropy production rate-based technologies. The semiconducting framework introduced here is expected to stimulate further investigations at the intersection of elastic modulus tensor and electron cyclotron resonance research.",
+    "references": [
+      "[1] Zhang, Y. et al. Proceedings of the National Academy of Sciences 201, 7847 (2024). doi:10.xxxx/ref.2024.12977",
+      "[2] Al-Rashid, A. et al. Physical Review Letters 499, 5509 (2021). doi:10.xxxx/ref.2021.08714",
+      "[3] Müller, R. & Nakamura, T. Nature Nanotechnology 454, 4763 (2024). doi:10.xxxx/ref.2024.85045",
+      "[4] Zhang, Y. et al. IEEE Transactions on Quantum Engineering 453, 5010 (2020). doi:10.xxxx/ref.2020.52736",
+      "[5] Zhang, Y. et al. Computational Materials Science 301, 6212 (2022). doi:10.xxxx/ref.2022.65761",
+      "[6] Zhang, Y. et al. Nature Biotechnology 120, 8102 (2020). doi:10.xxxx/ref.2020.75868",
+      "[7] Chen, X. et al. Journal of Applied Physics 150, 1122 (2021). doi:10.xxxx/ref.2021.13272",
+      "[8] Zhang, Y. et al. Nature Biotechnology 302, 9252 (2022). doi:10.xxxx/ref.2022.18782",
+      "[9] Müller, R. & Nakamura, T. Proceedings of the National Academy of Sciences 223, 1625 (2020). doi:10.xxxx/ref.2020.20185",
+      "[10] Chen, X. et al. Biomacromolecules 179, 5338 (2022). doi:10.xxxx/ref.2022.85511"
+    ],
+    "domains": [
+      "materials_science",
+      "crystallography",
+      "carbon_chemistry",
+      "metallurgy",
+      "electrochemistry",
+      "surface_science",
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "selenology",
+      "tidal_mechanics",
+      "planetary_science"
+    ],
+    "tokenValue": 0,
+    "spinNumber": 33,
+    "generatedAt": "2026-03-14T04:04:24.027Z",
+    "searchEnriched": false
+  }
+}
