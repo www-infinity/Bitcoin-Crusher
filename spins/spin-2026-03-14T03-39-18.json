@@ -1,0 +1,85 @@
+{
+  "spinNumber": 20,
+  "timestamp": "2026-03-14T03:39:18.611Z",
+  "symbols": [
+    "🔥",
+    "⭐",
+    "💎",
+    "🔥",
+    "🔥"
+  ],
+  "symbolLabels": [
+    "FIRE",
+    "STAR",
+    "DIAM",
+    "FIRE",
+    "FIRE"
+  ],
+  "symbolValues": [
+    3,
+    2,
+    5,
+    3,
+    3
+  ],
+  "result": "⭐ BIG WIN — 3 of a kind!",
+  "tier": "win-medium",
+  "score": 80,
+  "totalScore": 526,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Role of Heat capacity anomaly in Governing Degenerate Behaviour in plasma physics",
+    "authors": [
+      "Dr. Marcus Webb",
+      "Dr. Aisha Al-Rashid",
+      "Prof. Carlos Rivera"
+    ],
+    "journal": "npj Computational Materials",
+    "year": 2026,
+    "doi": "10.1038/acsnano.2026.74428",
+    "impactFactor": 31.8,
+    "keywords": [
+      "thermoelectric figure of merit",
+      "reciprocal lattice vector",
+      "superlattice period",
+      "flame temperature",
+      "nuclear fusion",
+      "crystallography",
+      "carbon chemistry"
+    ],
+    "abstract": "Using electron-degenerate Schwarzschild radius techniques, we demonstrate that lean systems exhibit remarkable convective behaviour under controlled conditions. Our results reveal a previously uncharacterised correlation between enthalpy of formation and armchair chirality vector, with broad implications for fundamental science and next-generation technology. Specifically, we find that isentropic vacancy formation energy enhances performance by up to 124.1% relative to conventional approaches.",
+    "introduction": "The field of combustion chemistry has witnessed remarkable advances, driven by demand for amorphous systems with unprecedented hydrogen-burning shell capabilities [1,2]. Central to these developments is the ability to precisely control armchair chirality vector at the turbulent level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between accretion disc luminosity and Miller index plane has emerged as a critical factor governing macroscopic rich behaviour [6]. Despite significant progress, the mechanistic origin of metallic Langmuir probe characteristic phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining hydrogen-burning shell spectroscopy, computational modelling, and weakly coupled characterisation.",
+    "methods": "All samples were prepared using a thermonuclear equivalence ratio synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed plasma oscillation frequency analysis with a spatial resolution of 0.46 nm. Hexagonal close-packed measurements were conducted between 4 K and 873 K using a custom-built graphene nanosheet apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 518 eV. Statistical analysis applied a bootstrapping methodology (n = 516 iterations) at significance threshold p < 0.05.",
+    "results": "The chiral phase diagram boundary exhibited a well-defined face-centred cubic signature consistent with theoretical predictions. Quantitative analysis revealed a conjugated dependence with R² = 0.954. The carbon-oxygen regime showed a 29.8-fold enhancement in Carnot efficiency limit performance relative to the control. Cross-validation using independent plasma beta value measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of piezoelectric hydrogen-burning shell at the critical threshold was accompanied by a characteristic laminar burning velocity shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed piezoelectric behaviour can be rationalised within a framework accounting for twin boundary energy-mediated coupling between MHD-stable domains. Our findings align with recent reports on analogous combustion chemistry systems while extending understanding to the previously unexplored orthorhombic regime [9,10]. The 87.3% enhancement in dislocation density substantially exceeds state-of-the-art benchmarks, suggesting stoichiometric tokamak aspect ratio as a genuinely superior platform. From a practical standpoint, our convective fabrication route is scalable and compatible with existing plasma oscillation frequency-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component diffusion systems.",
+    "conclusion": "We demonstrated amorphous supernova progenitor mass in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation metastable fracture toughness-based technologies. The turbulent framework introduced here is expected to stimulate further investigations at the intersection of armchair chirality vector and cosmic microwave background anisotropy research.",
+    "references": [
+      "[1] Osei, H. et al. npj Computational Materials 149, 6555 (2019). doi:10.xxxx/ref.2019.02578",
+      "[2] Volkov, A. K. et al. IEEE Transactions on Quantum Engineering 305, 2522 (2025). doi:10.xxxx/ref.2025.96564",
+      "[3] Al-Rashid, A. et al. Biomacromolecules 171, 4995 (2024). doi:10.xxxx/ref.2024.48467",
+      "[4] Al-Rashid, A. et al. Proceedings of the National Academy of Sciences 330, 4867 (2020). doi:10.xxxx/ref.2020.02782",
+      "[5] Patel, A. et al. Advanced Functional Materials 209, 2470 (2025). doi:10.xxxx/ref.2025.44402",
+      "[6] Osei, H. et al. Biomacromolecules 259, 1795 (2025). doi:10.xxxx/ref.2025.82082",
+      "[7] Volkov, A. K. et al. Nature Materials 418, 2642 (2023). doi:10.xxxx/ref.2023.84694",
+      "[8] Chen, X. et al. Biomacromolecules 344, 6056 (2019). doi:10.xxxx/ref.2019.88046",
+      "[9] Al-Rashid, A. et al. Physical Review Letters 236, 6338 (2022). doi:10.xxxx/ref.2022.02052",
+      "[10] Zhang, Y. et al. npj Computational Materials 301, 2104 (2025). doi:10.xxxx/ref.2025.23305"
+    ],
+    "domains": [
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "materials_science",
+      "crystallography",
+      "carbon_chemistry"
+    ],
+    "tokenValue": 80,
+    "spinNumber": 20,
+    "generatedAt": "2026-03-14T03:39:18.672Z",
+    "searchEnriched": false
+  }
+}
