@@ -1,0 +1,88 @@
+{
+  "spinNumber": 24,
+  "timestamp": "2026-03-14T03:39:40.375Z",
+  "symbols": [
+    "🌕",
+    "👑",
+    "🧱",
+    "🔥",
+    "🧱"
+  ],
+  "symbolLabels": [
+    "MOON",
+    "CROWN",
+    "BLOCK",
+    "FIRE",
+    "BLOCK"
+  ],
+  "symbolValues": [
+    6,
+    7,
+    4,
+    3,
+    4
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 48,
+  "totalScore": 706,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Role of Magnetic dynamo in Governing Lean Behaviour in tidal mechanics",
+    "authors": [
+      "Dr. Marcus Webb",
+      "Dr. Aisha Al-Rashid",
+      "Prof. Carlos Rivera"
+    ],
+    "journal": "Proceedings of the National Academy of Sciences",
+    "year": 2026,
+    "doi": "10.1038/prl.2026.90523",
+    "impactFactor": 18.5,
+    "keywords": [
+      "density of states at Fermi energy",
+      "Fermi level alignment",
+      "exergy destruction",
+      "Faradaic efficiency",
+      "tidal mechanics",
+      "solid state physics",
+      "surface science"
+    ],
+    "abstract": "Using isothermal scanning tunnelling microscopy image techniques, we demonstrate that cathodic systems exhibit remarkable equatorial behaviour under controlled conditions. Specifically, we find that anodic contact angle hysteresis enhances performance by up to 87.5% relative to conventional approaches. The thermoresponsive nature of the observed ignition delay time was confirmed through high-resolution chain entanglement analysis and first-principles calculations.",
+    "introduction": "The field of selenology has witnessed remarkable advances, driven by demand for quasi-static systems with unprecedented work-hardening exponent capabilities [1,2]. Central to these developments is the ability to precisely control surface plasmon resonance wavelength at the hydrophilic level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between monolayer coverage and Langmuir probe characteristic has emerged as a critical factor governing macroscopic lean behaviour [6]. Despite significant progress, the mechanistic origin of non-equilibrium Carnot efficiency limit phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining polar water-ice deposit spectroscopy, computational modelling, and cathodic characterisation.",
+    "methods": "All samples were prepared using a tidally locked mare basalt stratigraphy synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed surface adsorption energy analysis with a spatial resolution of 0.54 nm. Reconstructed measurements were conducted between 4 K and 873 K using a custom-built flame temperature apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 511 eV. Statistical analysis applied a bootstrapping methodology (n = 296 iterations) at significance threshold p < 0.05.",
+    "results": "The thermoresponsive soot formation pathway exhibited a well-defined electrocatalytic signature consistent with theoretical predictions. Quantitative analysis revealed a volcanic dependence with R² = 0.967. The passivated regime showed a 14.2-fold enhancement in lunar regolith composition performance relative to the control. Cross-validation using independent laminar burning velocity measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of irreversible density of states at Fermi energy at the critical threshold was accompanied by a characteristic surface adsorption energy shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed polar behaviour can be rationalised within a framework accounting for overpotential barrier-mediated coupling between non-equilibrium domains. Our findings align with recent reports on analogous selenology systems while extending understanding to the previously unexplored passivated regime [9,10]. The 248.2% enhancement in Love number substantially exceeds state-of-the-art benchmarks, suggesting non-equilibrium impact crater morphology as a genuinely superior platform. From a practical standpoint, our stoichiometric fabrication route is scalable and compatible with existing chain entanglement-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component thermoresponsive systems.",
+    "conclusion": "We demonstrated premixed self-assembly driving force in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation premixed atmospheric escape rate-based technologies. The hydrophilic framework introduced here is expected to stimulate further investigations at the intersection of self-assembly driving force and nanoparticle size distribution research.",
+    "references": [
+      "[1] Tanaka, Y. & Park, J. Physical Chemistry Chemical Physics 250, 4595 (2024). doi:10.xxxx/ref.2024.16899",
+      "[2] Williams, B. & Singh, P. Carbon 285, 8433 (2024). doi:10.xxxx/ref.2024.80893",
+      "[3] Kim, J. H. et al. IEEE Transactions on Quantum Engineering 105, 1072 (2020). doi:10.xxxx/ref.2020.80596",
+      "[4] Williams, B. & Singh, P. Journal of Materials Chemistry A 201, 9479 (2022). doi:10.xxxx/ref.2022.88041",
+      "[5] Zhang, Y. et al. Angewandte Chemie International Edition 127, 8265 (2019). doi:10.xxxx/ref.2019.04051",
+      "[6] Kim, J. H. et al. Nature Materials 399, 8721 (2025). doi:10.xxxx/ref.2025.52895",
+      "[7] Kim, J. H. et al. Nature Nanotechnology 463, 7671 (2020). doi:10.xxxx/ref.2020.16101",
+      "[8] Chen, X. et al. Computational Materials Science 243, 2042 (2022). doi:10.xxxx/ref.2022.23399",
+      "[9] Williams, B. & Singh, P. Journal of Materials Chemistry A 153, 2944 (2022). doi:10.xxxx/ref.2022.92838",
+      "[10] Müller, R. & Nakamura, T. Computational Materials Science 471, 4056 (2025). doi:10.xxxx/ref.2025.12434"
+    ],
+    "domains": [
+      "selenology",
+      "tidal_mechanics",
+      "planetary_science",
+      "metallurgy",
+      "electrochemistry",
+      "surface_science",
+      "solid_state_physics",
+      "polymer_chemistry",
+      "nanotechnology",
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics"
+    ],
+    "tokenValue": 48,
+    "spinNumber": 24,
+    "generatedAt": "2026-03-14T03:39:40.427Z",
+    "searchEnriched": false
+  }
+}
