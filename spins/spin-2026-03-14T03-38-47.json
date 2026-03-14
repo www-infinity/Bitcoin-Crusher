@@ -1,0 +1,88 @@
+{
+  "spinNumber": 15,
+  "timestamp": "2026-03-14T03:38:47.031Z",
+  "symbols": [
+    "🌕",
+    "⭐",
+    "💎",
+    "💎",
+    "🍄"
+  ],
+  "symbolLabels": [
+    "MOON",
+    "STAR",
+    "DIAM",
+    "DIAM",
+    "MARIO"
+  ],
+  "symbolValues": [
+    6,
+    2,
+    5,
+    5,
+    6
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 48,
+  "totalScore": 386,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Mechanisms of Dirac cone in Supermassive tidal mechanics Networks",
+    "authors": [
+      "Dr. Kwame Asante",
+      "Prof. Ingrid Svensson",
+      "Dr. Rafael Torres"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "year": 2026,
+    "doi": "10.1038/acsnano.2026.46018",
+    "impactFactor": 18.5,
+    "keywords": [
+      "Dirac cone",
+      "allosteric regulatory site",
+      "van der Waals heterostructure",
+      "structure factor amplitude",
+      "stellar evolution",
+      "crystallography",
+      "selenology"
+    ],
+    "abstract": "Our results reveal a previously uncharacterised correlation between single-walled carbon nanotube and neoclassical tearing mode, with broad implications for fundamental science and next-generation technology. We report polycrystalline properties of polar water-ice deposit in selenology. The space-weathered nature of the observed gravitational wave strain was confirmed through high-resolution neutron star equation of state analysis and first-principles calculations.",
+    "introduction": "The field of selenology has witnessed remarkable advances, driven by demand for polycrystalline systems with unprecedented pulsar timing residual capabilities [1,2]. Central to these developments is the ability to precisely control supernova progenitor mass at the piezoelectric level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between impact crater morphology and magnetic reconnection event has emerged as a critical factor governing macroscopic bifunctional behaviour [6]. Despite significant progress, the mechanistic origin of necrotrophic graphene nanosheet phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining Stone–Wales defect spectroscopy, computational modelling, and tetragonal characterisation.",
+    "methods": "All samples were prepared using a oblique accretion disc luminosity synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed plasma beta parameter analysis with a spatial resolution of 0.17 nm. Enzymatic measurements were conducted between 4 K and 873 K using a custom-built Schwarzschild radius apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 574 eV. Statistical analysis applied a bootstrapping methodology (n = 627 iterations) at significance threshold p < 0.05.",
+    "results": "The relativistic plasma beta parameter exhibited a well-defined semiconducting signature consistent with theoretical predictions. Quantitative analysis revealed a gardened dependence with R² = 0.975. The isotropic regime showed a 45.9-fold enhancement in van der Waals heterostructure performance relative to the control. Cross-validation using independent r-process nucleosynthesis yield measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of synchronously rotating reciprocal lattice vector at the critical threshold was accompanied by a characteristic planetary nebula shell shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed polycrystalline behaviour can be rationalised within a framework accounting for impact melt glass-mediated coupling between MHD-stable domains. Our findings align with recent reports on analogous selenology systems while extending understanding to the previously unexplored pharmacokinetic regime [9,10]. The 92.4% enhancement in fracture toughness substantially exceeds state-of-the-art benchmarks, suggesting impact-generated martensitic phase transformation as a genuinely superior platform. From a practical standpoint, our ferroelectric fabrication route is scalable and compatible with existing grain boundary energy-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component saprophytic systems.",
+    "conclusion": "We demonstrated synchronously rotating van der Waals heterostructure in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation metastable gravitational wave strain-based technologies. The superhydrophobic framework introduced here is expected to stimulate further investigations at the intersection of crystalline lattice parameter and impact melt glass research.",
+    "references": [
+      "[1] Tanaka, Y. & Park, J. Proceedings of the National Academy of Sciences 286, 1169 (2024). doi:10.xxxx/ref.2024.85643",
+      "[2] Williams, B. & Singh, P. ACS Catalysis 411, 5950 (2023). doi:10.xxxx/ref.2023.73814",
+      "[3] Al-Rashid, A. et al. Journal of Applied Physics 254, 1984 (2019). doi:10.xxxx/ref.2019.46872",
+      "[4] Chen, X. et al. Physical Chemistry Chemical Physics 457, 2415 (2022). doi:10.xxxx/ref.2022.40840",
+      "[5] Al-Rashid, A. et al. ACS Nano 460, 8896 (2021). doi:10.xxxx/ref.2021.61968",
+      "[6] Chen, X. et al. Journal of Materials Chemistry A 261, 6988 (2025). doi:10.xxxx/ref.2025.85798",
+      "[7] Osei, H. et al. Computational Materials Science 177, 1626 (2024). doi:10.xxxx/ref.2024.50178",
+      "[8] Kim, J. H. et al. Journal of Applied Physics 297, 4114 (2022). doi:10.xxxx/ref.2022.68847",
+      "[9] Al-Rashid, A. et al. Advanced Materials 131, 3190 (2022). doi:10.xxxx/ref.2022.32136",
+      "[10] Kim, J. H. et al. IEEE Transactions on Quantum Engineering 382, 3777 (2022). doi:10.xxxx/ref.2022.75672"
+    ],
+    "domains": [
+      "selenology",
+      "tidal_mechanics",
+      "planetary_science",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "materials_science",
+      "crystallography",
+      "carbon_chemistry",
+      "mycology",
+      "biochemistry",
+      "pharmacology"
+    ],
+    "tokenValue": 48,
+    "spinNumber": 15,
+    "generatedAt": "2026-03-14T03:38:47.083Z",
+    "searchEnriched": false
+  }
+}
