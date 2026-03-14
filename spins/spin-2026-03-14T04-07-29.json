@@ -1,0 +1,91 @@
+{
+  "spinNumber": 36,
+  "timestamp": "2026-03-14T04:07:28.984Z",
+  "symbols": [
+    "👑",
+    "🔥",
+    "🍄",
+    "⭐",
+    "💎"
+  ],
+  "symbolLabels": [
+    "CROWN",
+    "FIRE",
+    "MARIO",
+    "STAR",
+    "DIAM"
+  ],
+  "symbolValues": [
+    7,
+    3,
+    6,
+    2,
+    5
+  ],
+  "result": "🔄 No match. Spin again.",
+  "tier": "lose",
+  "score": 0,
+  "totalScore": 922,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "Role of Sporocarp morphology in Governing Hexagonal close-packed Behaviour in electrochemistry",
+    "authors": [
+      "Dr. Hannah Osei",
+      "Prof. Thomas Brauer",
+      "Dr. Jin-Woo Park"
+    ],
+    "journal": "Nature Materials",
+    "year": 2026,
+    "doi": "10.1038/prl.2026.42539",
+    "impactFactor": 9.2,
+    "keywords": [
+      "work-hardening exponent",
+      "Hall–Petch relationship",
+      "grain boundary energy",
+      "chitin cell-wall composition",
+      "carbon chemistry",
+      "combustion chemistry",
+      "nuclear fusion"
+    ],
+    "abstract": "These findings open new avenues for the rational design of light-weight creep rupture life-based architectures. The isentropic nature of the observed sporocarp morphology was confirmed through high-resolution detonation wave speed analysis and first-principles calculations. Using corrosion-resistant fracture toughness techniques, we demonstrate that relativistic systems exhibit remarkable collisionless behaviour under controlled conditions.",
+    "introduction": "The field of metallurgy has witnessed remarkable advances, driven by demand for body-centred cubic systems with unprecedented magnetohydrodynamic wave capabilities [1,2]. Central to these developments is the ability to precisely control NADH oxidoreductase complex at the thermonuclear level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between plasma beta parameter and electrochemical impedance spectrum has emerged as a critical factor governing macroscopic carbon-oxygen behaviour [6]. Despite significant progress, the mechanistic origin of isothermal intermetallic phase phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining Carnot efficiency limit spectroscopy, computational modelling, and potent characterisation.",
+    "methods": "All samples were prepared using a electrocatalytic asymptotic giant branch synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed neoclassical tearing mode analysis with a spatial resolution of 0.34 nm. Redox-active measurements were conducted between 4 K and 873 K using a custom-built substrate channelling apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 657 eV. Statistical analysis applied a bootstrapping methodology (n = 399 iterations) at significance threshold p < 0.05.",
+    "results": "The radiative armchair chirality vector exhibited a well-defined monoclinic signature consistent with theoretical predictions. Quantitative analysis revealed a multifunctional dependence with R² = 0.912. The self-healing regime showed a 46.9-fold enhancement in scanning tunnelling microscopy image performance relative to the control. Cross-validation using independent single-walled carbon nanotube measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of body-centred cubic ADMET profile at the critical threshold was accompanied by a characteristic gravitational wave strain shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed turbulent behaviour can be rationalised within a framework accounting for elastic modulus tensor-mediated coupling between electron-degenerate domains. Our findings align with recent reports on analogous metallurgy systems while extending understanding to the previously unexplored saprophytic regime [9,10]. The 57.0% enhancement in Carnot efficiency limit substantially exceeds state-of-the-art benchmarks, suggesting isentropic work function shift as a genuinely superior platform. From a practical standpoint, our chiral fabrication route is scalable and compatible with existing accretion disc luminosity-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component light-weight systems.",
+    "conclusion": "We demonstrated cathodic powder diffraction pattern in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation saprophytic plasma oscillation frequency-based technologies. The carbon-oxygen framework introduced here is expected to stimulate further investigations at the intersection of martensitic phase transformation and Langmuir probe characteristic research.",
+    "references": [
+      "[1] Williams, B. & Singh, P. Acta Materialia 329, 9515 (2020). doi:10.xxxx/ref.2020.98958",
+      "[2] Volkov, A. K. et al. Nature Nanotechnology 407, 9734 (2019). doi:10.xxxx/ref.2019.17440",
+      "[3] Tanaka, Y. & Park, J. Journal of Applied Physics 294, 1627 (2021). doi:10.xxxx/ref.2021.23293",
+      "[4] Müller, R. & Nakamura, T. Nature Biotechnology 147, 6132 (2021). doi:10.xxxx/ref.2021.25995",
+      "[5] Chen, X. et al. IEEE Transactions on Quantum Engineering 135, 8991 (2019). doi:10.xxxx/ref.2019.26592",
+      "[6] Chen, X. et al. Advanced Materials 305, 2950 (2021). doi:10.xxxx/ref.2021.29875",
+      "[7] Al-Rashid, A. et al. Angewandte Chemie International Edition 129, 9682 (2024). doi:10.xxxx/ref.2024.75930",
+      "[8] Al-Rashid, A. et al. Physical Chemistry Chemical Physics 152, 4135 (2025). doi:10.xxxx/ref.2025.71548",
+      "[9] Williams, B. & Singh, P. Science Advances 327, 5044 (2021). doi:10.xxxx/ref.2021.55880",
+      "[10] Williams, B. & Singh, P. Proceedings of the National Academy of Sciences 414, 2595 (2023). doi:10.xxxx/ref.2023.17729"
+    ],
+    "domains": [
+      "metallurgy",
+      "electrochemistry",
+      "surface_science",
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "mycology",
+      "biochemistry",
+      "pharmacology",
+      "astrophysics",
+      "nuclear_fusion",
+      "stellar_evolution",
+      "materials_science",
+      "crystallography",
+      "carbon_chemistry"
+    ],
+    "tokenValue": 0,
+    "spinNumber": 36,
+    "generatedAt": "2026-03-14T04:07:29.109Z",
+    "searchEnriched": false
+  }
+}
