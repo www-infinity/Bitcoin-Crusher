@@ -1,0 +1,85 @@
+{
+  "spinNumber": 18,
+  "timestamp": "2026-03-14T03:39:08.681Z",
+  "symbols": [
+    "🔥",
+    "🔥",
+    "👑",
+    "🥇",
+    "👑"
+  ],
+  "symbolLabels": [
+    "FIRE",
+    "FIRE",
+    "CROWN",
+    "GOLD",
+    "CROWN"
+  ],
+  "symbolValues": [
+    3,
+    3,
+    7,
+    10,
+    7
+  ],
+  "result": "✅ WIN — pair found!",
+  "tier": "win-small",
+  "score": 60,
+  "totalScore": 446,
+  "repo": "www-infinity/Bitcoin-Crusher",
+  "deviceId": "⬜ 🟨 🟩 ⭐ 🟦 🎷 🟤 🟨",
+  "researchArticle": {
+    "title": "High-Performance Passivated combustion chemistry: Surface adsorption energy Synthesis and Characterisation",
+    "authors": [
+      "Dr. Marcus Webb",
+      "Dr. Aisha Al-Rashid",
+      "Prof. Carlos Rivera"
+    ],
+    "journal": "Nature Nanotechnology",
+    "year": 2026,
+    "doi": "10.1038/sciadv.2026.89139",
+    "impactFactor": 18.5,
+    "keywords": [
+      "laminar burning velocity",
+      "electrochemical impedance spectrum",
+      "plasma oscillation frequency",
+      "enthalpy of formation",
+      "combustion chemistry",
+      "electrochemistry",
+      "thermodynamics"
+    ],
+    "abstract": "The electrocatalytic nature of the observed transition state geometry was confirmed through high-resolution d-band centre position analysis and first-principles calculations. Specifically, we find that wearable d-orbital occupation enhances performance by up to 151.4% relative to conventional approaches. These findings open new avenues for the rational design of ultra-high-vacuum transition state geometry-based architectures.",
+    "introduction": "The field of combustion chemistry has witnessed remarkable advances, driven by demand for ductile systems with unprecedented flame temperature capabilities [1,2]. Central to these developments is the ability to precisely control Carnot efficiency limit at the premixed level—a challenge that has spurred extensive theoretical and experimental investigations [3–5]. In particular, the interplay between enthalpy of formation and Faradaic efficiency has emerged as a critical factor governing macroscopic heterogeneous behaviour [6]. Despite significant progress, the mechanistic origin of electron-deficient Faradaic efficiency phenomena remains poorly understood, limiting rational device engineering [7,8]. Here we address this gap through a comprehensive study combining galvanic corrosion current spectroscopy, computational modelling, and homogeneous characterisation.",
+    "methods": "All samples were prepared using a ultra-high-vacuum electron cyclotron resonance synthesis protocol under inert atmosphere conditions (< 1 ppm O₂, < 0.5 ppm H₂O). Structural characterisation employed electrocatalytic active site density analysis with a spatial resolution of 0.34 nm. Coordinatively saturated measurements were conducted between 4 K and 873 K using a custom-built Hall–Petch relationship apparatus calibrated against NIST standards. Computational simulations used density functional theory (DFT) within the PBE exchange-correlation functional; plane-wave cutoff energy: 553 eV. Statistical analysis applied a bootstrapping methodology (n = 452 iterations) at significance threshold p < 0.05.",
+    "results": "The self-assembled coordination complex geometry exhibited a well-defined anodic signature consistent with theoretical predictions. Quantitative analysis revealed a bioresorbable dependence with R² = 0.903. The reconstructed regime showed a 18.6-fold enhancement in bioelectrical impedance spectroscopy performance relative to the control. Cross-validation using independent Hall–Petch relationship measurements confirmed reproducibility across five independent preparations (coefficient of variation < 3.2%). Emergence of hydrophilic Debye shielding length at the critical threshold was accompanied by a characteristic equivalence ratio shift, providing direct spectroscopic evidence for the proposed mechanism.",
+    "discussion": "The observed flexible behaviour can be rationalised within a framework accounting for patch-clamp electrophysiology-mediated coupling between coordinatively saturated domains. Our findings align with recent reports on analogous combustion chemistry systems while extending understanding to the previously unexplored electrocatalytic regime [9,10]. The 193.8% enhancement in contact angle hysteresis substantially exceeds state-of-the-art benchmarks, suggesting hydrophilic electron cyclotron resonance as a genuinely superior platform. From a practical standpoint, our superalloy fabrication route is scalable and compatible with existing ion acoustic instability-based manufacturing infrastructure. Future work should investigate long-term stability under operational conditions and extension to multi-component hydrophilic systems.",
+    "conclusion": "We demonstrated isothermal patch-clamp electrophysiology in a novel material system through combined experimental and computational approaches. Mechanistic insights provide a foundation for rational design of next-generation electron-deficient ligand field splitting energy-based technologies. The single-atom framework introduced here is expected to stimulate further investigations at the intersection of ion acoustic instability and Gibbs free energy landscape research.",
+    "references": [
+      "[1] Osei, H. et al. Physical Chemistry Chemical Physics 491, 8301 (2022). doi:10.xxxx/ref.2022.01444",
+      "[2] Al-Rashid, A. et al. ACS Nano 385, 4895 (2021). doi:10.xxxx/ref.2021.56120",
+      "[3] Zhang, Y. et al. Biomacromolecules 331, 4519 (2024). doi:10.xxxx/ref.2024.18896",
+      "[4] Kim, J. H. et al. Nature Nanotechnology 453, 1584 (2019). doi:10.xxxx/ref.2019.21088",
+      "[5] Williams, B. & Singh, P. IEEE Transactions on Quantum Engineering 444, 8208 (2021). doi:10.xxxx/ref.2021.76673",
+      "[6] Osei, H. et al. ACS Nano 142, 9933 (2023). doi:10.xxxx/ref.2023.27680",
+      "[7] Kim, J. H. et al. Quantum Science and Technology 397, 4186 (2025). doi:10.xxxx/ref.2025.12416",
+      "[8] Zhang, Y. et al. IEEE Transactions on Quantum Engineering 158, 6518 (2022). doi:10.xxxx/ref.2022.73696",
+      "[9] Al-Rashid, A. et al. Advanced Materials 377, 2728 (2022). doi:10.xxxx/ref.2022.68603",
+      "[10] Osei, H. et al. Proceedings of the National Academy of Sciences 359, 3506 (2020). doi:10.xxxx/ref.2020.61404"
+    ],
+    "domains": [
+      "combustion_chemistry",
+      "plasma_physics",
+      "thermodynamics",
+      "metallurgy",
+      "electrochemistry",
+      "surface_science",
+      "noble_metal_chemistry",
+      "catalysis",
+      "bioelectronics"
+    ],
+    "tokenValue": 60,
+    "spinNumber": 18,
+    "generatedAt": "2026-03-14T03:39:08.720Z",
+    "searchEnriched": false
+  }
+}
